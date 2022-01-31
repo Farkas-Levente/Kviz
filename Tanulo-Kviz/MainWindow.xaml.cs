@@ -29,12 +29,17 @@ namespace Tanulo_Kviz
         {
 
             InitializeComponent();
+
             Tantargy fizika = new Tantargy("fizika.txt");
             tantargyNyilvantarto.Add(fizika.nev, fizika);
             targyBox.Items.Add(fizika.nev.ToUpper());
 
-            
-            
+            Tantargy matek = new Tantargy("matek.txt");
+            tantargyNyilvantarto.Add(matek.nev, matek);
+            targyBox.Items.Add(matek.nev.ToUpper());
+
+
+
         }
 
 
