@@ -29,7 +29,11 @@ namespace Tanulo_Kviz
         {
 
             InitializeComponent();
+            Tantargy fizika = new Tantargy(@"C:\Users\Flevi\Documents\fizika.txt");
+            tantargyNyilvantarto.Add(fizika.nev, fizika);
 
+            testLabel.Content = fizika.nev;
+            
         }
 
 
@@ -41,12 +45,14 @@ namespace Tanulo_Kviz
 
         public class Tantargy
         {
-            List<Tema> temak = new List<Tema>();
-            string nev;
+            public List<Tema> temak = new List<Tema>();
+            public string nev;
 
             public Tantargy(string eleresiUt)
             {
                 string[] allomany = File.ReadAllLines(eleresiUt);
+
+                
                 nev = allomany[0].Split(';')[0];
 
 
@@ -67,7 +73,7 @@ namespace Tanulo_Kviz
         public class Tema
         {
             List<Kerdes> kerdesek = new List<Kerdes>();
-            string nev;
+           public string nev;
             public Tema(string nev,string[] allomany)
             {
                 this.nev = nev;
@@ -86,6 +92,21 @@ namespace Tanulo_Kviz
         public class Kerdes
         {
             
+        }
+
+        private void TargyBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            temakorBox.Items.Clear();
+            Tantargy targy = null;
+            string selectedTargyString = targyBox.SelectedItem.ToString();
+            string kisbetus =  selectedTargyString.ToLower();
+            testLabel.Content = kisbetus;
+            tantargyNyilvantarto.TryGetValue("fizika", out targy);
+            if (targy == null) return;
+            foreach(Tema tema in targy.temak)
+            {
+                temakorBox.Items.Add(tema.nev);
+            }
         }
     }
 }
