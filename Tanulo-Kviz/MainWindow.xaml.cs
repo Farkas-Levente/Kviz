@@ -29,10 +29,11 @@ namespace Tanulo_Kviz
         {
 
             InitializeComponent();
-            Tantargy fizika = new Tantargy(@"C:\Users\Flevi\Documents\fizika.txt");
+            Tantargy fizika = new Tantargy("fizika.txt");
             tantargyNyilvantarto.Add(fizika.nev, fizika);
+            targyBox.Items.Add(fizika.nev.ToUpper());
 
-            testLabel.Content = fizika.nev;
+            
             
         }
 
@@ -101,7 +102,7 @@ namespace Tanulo_Kviz
             string selectedTargyString = targyBox.SelectedItem.ToString();
             string kisbetus =  selectedTargyString.ToLower();
             testLabel.Content = kisbetus;
-            tantargyNyilvantarto.TryGetValue("fizika", out targy);
+            tantargyNyilvantarto.TryGetValue(kisbetus, out targy);
             if (targy == null) return;
             foreach(Tema tema in targy.temak)
             {

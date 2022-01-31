@@ -10,11 +10,7 @@
         <Label Content="Válaszd ki a kvíz témáját:" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label Content="Tantárgy:" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" FontSize="16"/>
         <ComboBox Name="targyBox" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="TargyBox_SelectionChanged">
-            <ComboBoxItem Content="Matematika"/>
-            <ComboBoxItem Content="Fizika"/>
-            <ComboBoxItem Content="Informatika"/>
-            <ComboBoxItem Content="Történelem"/>
-            <ComboBoxItem Content="Irodalom"/>
+           
         </ComboBox>
         <Label Content="Témakör" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" FontSize="16"/>
         <ComboBox Name="temakorBox" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="120"/>
