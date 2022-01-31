@@ -15,7 +15,7 @@
         <Label Content="Témakör" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" FontSize="16"/>
         <ComboBox Name="temakorBox" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="120"/>
         <Button Content="Feladatok generálása" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="160" Height="70"/>
-        <Label Name="testLabel" Content="Label" HorizontalAlignment="Left" Margin="99,147,0,0" VerticalAlignment="Top"/>
+        <Label Name="testLabel" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,147,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
