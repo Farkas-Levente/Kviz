@@ -37,11 +37,11 @@ namespace Tanulo_Kviz
             
             Tantargy fizika = new Tantargy("fizika.txt");
             tantargyNyilvantarto.Add(fizika.nev, fizika);
-            targyBox.Items.Add(fizika.nev.ToUpper());
+            targyBox.Items.Add(fizika.nev);
 
             Tantargy magyar = new Tantargy("magyar.txt");
             tantargyNyilvantarto.Add(magyar.nev, magyar);
-            targyBox.Items.Add(magyar.nev.ToUpper());
+            targyBox.Items.Add(magyar.nev);
 
         }
 
@@ -102,11 +102,13 @@ namespace Tanulo_Kviz
         {
             temakorBox.Items.Clear();
             temakorBox.Items.Clear();
+            selectedTargy = null;
+            selectedTema = null;
 
             Tantargy targy = null;
             string selectedTargyString = targyBox.SelectedItem.ToString();
-            string kisbetus =  selectedTargyString.ToLower();
-            tantargyNyilvantarto.TryGetValue(kisbetus, out targy);
+            testLabel.Content = selectedTargyString;
+            tantargyNyilvantarto.TryGetValue(selectedTargyString, out targy);
 
             temakorBox.IsEnabled = false;
 
@@ -123,13 +125,14 @@ namespace Tanulo_Kviz
 
         private void TemaBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Tema tema = null;
+            
 
             if(temakorBox.SelectedItem == null || temakorBox.Items.Count <= 0) { return; }
-            
+            Tema tema = null;
             string selectedTemaString = temakorBox.SelectedItem.ToString();
-            string kisbetus = selectedTemaString.ToLower();
-            selectedTargy.temaNyilvantarto.TryGetValue(kisbetus, out tema);
+            
+            testlabel2.Content = selectedTemaString;
+            selectedTargy.temaNyilvantarto.TryGetValue(selectedTemaString, out tema);
 
             if (tema == null) return;
 
@@ -143,14 +146,18 @@ namespace Tanulo_Kviz
                 MessageBox.Show("Kérem válasszon tantárgyat és témakört!");
                 return;
             }
-
+            else if(selectedTema == null)
+            {
+                MessageBox.Show("Kérem válasszon témakört!");
+                return;
+            }
             else if (selectedTargy == null)
             {
                 MessageBox.Show("Kérem válasszon tantárgyat!");
                 return;
             }
-            testLabel.Content = selectedTargy.nev;
-            testlabel2.Content = selectedTema.nev;
+            testLabel3.Content = selectedTargy.nev;
+            testlabel4.Content = selectedTema.nev;
         }
     }
 }
