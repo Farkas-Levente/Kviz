@@ -178,6 +178,9 @@ namespace Tanulo_Kviz
             }
             testLabel3.Content = selectedTargy.nev;
             testlabel4.Content = selectedTema.nev;
+
+            kvizLap.Visibility = Visibility.Visible;
+            foLap.Visibility = Visibility.Hidden;
         }
     }
 }
