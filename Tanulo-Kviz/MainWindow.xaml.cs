@@ -32,6 +32,8 @@ namespace Tanulo_Kviz
 
             InitializeComponent();
 
+            temakorBox.IsEnabled = false;
+
             
             Tantargy fizika = new Tantargy("fizika.txt");
             tantargyNyilvantarto.Add(fizika.nev, fizika);
@@ -106,7 +108,11 @@ namespace Tanulo_Kviz
             string kisbetus =  selectedTargyString.ToLower();
             tantargyNyilvantarto.TryGetValue(kisbetus, out targy);
 
+            temakorBox.IsEnabled = false;
+
             if (targy == null) return;
+
+            temakorBox.IsEnabled = true;
 
             selectedTargy = targy;
             foreach(Tema tema in targy.temak)
