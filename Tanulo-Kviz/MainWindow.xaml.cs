@@ -32,6 +32,8 @@ namespace Tanulo_Kviz
 
             InitializeComponent();
 
+            
+
             temakorBox.IsEnabled = false;
 
             
@@ -42,6 +44,10 @@ namespace Tanulo_Kviz
             Tantargy magyar = new Tantargy("magyar.txt");
             tantargyNyilvantarto.Add(magyar.nev, magyar);
             targyBox.Items.Add(magyar.nev);
+
+            Tantargy informatika = new Tantargy("informatika.txt");
+            tantargyNyilvantarto.Add(informatika.nev, informatika);
+            targyBox.Items.Add(informatika.nev);
 
         }
 
@@ -85,7 +91,7 @@ namespace Tanulo_Kviz
                 {
                     if(sor.Split(';')[1] == nev)
                     {
-                        Kerdes kerdes = new Kerdes();
+                        Kerdes kerdes = new Kerdes(sor);
                         kerdesek.Add(kerdes);
                     }
                      
@@ -95,7 +101,21 @@ namespace Tanulo_Kviz
 
         public class Kerdes
         {
-            
+            public string kerdes;
+            public string helyesValasz;
+            public string valasz2;
+            public string valasz3;
+            public string valasz4;
+
+            public Kerdes(string sor)
+            {
+                string[] splitek = sor.Split(';');
+                kerdes = splitek[2];
+                helyesValasz = splitek[3];
+                valasz2 = splitek[4];
+                valasz3 = splitek[5];
+                //valasz4 = splitek[6];   
+            }
         }
 
         private void TargyBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -158,6 +178,12 @@ namespace Tanulo_Kviz
             }
             testLabel3.Content = selectedTargy.nev;
             testlabel4.Content = selectedTema.nev;
+
+            kvizLap.Visibility = Visibility.Visible;
+            foLap.Visibility = Visibility.Hidden;
+
+            tantargy.Content = selectedTargy.nev;
+            temakor.Content = selectedTema.nev;
         }
     }
 }

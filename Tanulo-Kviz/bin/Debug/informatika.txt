@@ -1,0 +1,29 @@
+informatika;hálózat;Az OSI modell mellyik rétegében működik a switch?;Adatkapcsolati;Fizikai;Szállítási;Hálózati
+informatika;hálózat;Melyik protokollt használjuk dinamikus IP cím kiosztásra?;DHCP;RIP;DNS;APIPA
+informatika;hálózat;Hány rétege van az OSI modellnek?;7;6;8;5
+informatika;hálózat;Milyen hosszú egy IPv6-os cím?;128 bit;32 bit;48 bit;4 byte
+informatika;hálózat;Melyik osztályhoz tartozik a következő cím:176.9.120.142?;B;D;A;C
+informatika;hálózat;Az alábbiak közül melyik negyedik rétegbeli protokoll?;TCP;HTTP;Ethernet;DSL
+informatika;hálózat;Mi történik ha egy számítógépen rosszul van beállítva az alapértelmezett átjáró?;Nem éri el a más hálózaton lévő gépeket;A 127.0.0.1 pingetése sikertelen lesz;ARP kérést küld hogy kiderítse a helyes átjárót;Nem éri el a saját hálózatán lévő gépeket
+informatika;hálózat;Melyik protokoll használja alapértelmezetten a 80-as portot?;HTTP;FTP;Telnet;SSH
+informatika;hálózat;Melyik paranccsal lehet Cisco hálózati eszközön belépni a globális konfigurációs módba?;configure terminal;enable;interface serial0/0/0;login
+informatika;hálózat;Melyik állítás nem igaz a RIP version 1-re?;Nem osztályos címekkel is tud dolgozni;Maximum 15 ugrást tud;30 másodpercenként küld frissítést;frissítéseit broadcast üzenetben küldi
+informatika;hálózat;Melyik berendezés működik az OSI modell első rétegében?;Hub;Router;Switch;Egyik sem
+informatika;hálózat;Melyik lépés nem része a DHCP folyamatnak?;Confirmation;Offer;Discovery;Request
+informatika;hálózat;Milyen címzési fajta nincs IPv6 esetén?;Broadcast;Unicast;Anycast;Multicast
+informatika;hálózat;Az alábbiak közül melyiket nem tartalmazza egy forgalomirányító tábla?;MAC cím;IP cím;Metrika;Kimenő interface
+informatika;hálózat;OSPF használata esetén milyen szerepet kap egy priority 0-s router?;DROTHER;DR;BDR;nem eldönthető
+informatika;hálózat;Milyen hálózati maszk tartozik egy A osztályú Ip címhez?;/8;/12;/16;/24
+informatika;it;Milyen memória a cache?;SRAM;DRAM;ROM;Flash
+informatiak;it;Az alábbiak közül melyik hardvert kell 24 tűs csatlakozóval cstlakoztatni?;Tápegység;SATA meghajtó;Videokártya;CPU fan
+informatika;it;Az alábbiak közül melyik kimeneti periféria?;Hangszóró;Billentyűzet;Ujjlenyomatolvasó;Egér
+informatika;it;Milyen adatot tárol a CMOS memória?;BIOS beállítások;Felhasználók adatai;Illesztőprogramok;Rendszerfájlok
+informatika;it;Melyik berendezés elsődleges célja a vezetéknélküli hozzáférés biztosítása?;Access point;Router;Switch;Modem
+informatika;it;Milyen kábellel lehet egy számítógépet nyomtatóhoz csatlakoztatni?;FireWire;HDMI;PS/2;eSATA
+informatika;it;Melyik adattároló őrzi meg tartalmát kikapcsolás után?;SSD;RAM;Cache;CPU register
+informatika;it;Melyik állíás jellemzi a férget;Önsokszorosító;Más programokhoz csatlakozik;Program futtatásánál fejti ki hatását;Rejtve marad amíg nem futtatják
+informatika;it;Melyik a számítógépes rendszer leggyorsabb tárolója?;Register;Cache;DRAM;SRAM
+informatika;it;Melyik optikai háttértárnak a legnagyobb a kapacitása?;Blu ray;CD-RW;Single layer DVD;Dual layer DVD
+informatika;it;Melyik a számítógép kötelező perifériája?;Videovezérlő;Egér;Billentyűzet;Hangszóró
+informatika;it;Számítógép kikapcsolt állapotában hol található a BIOS?;ROM;RAM;Háttértár;Cache
+informatika;it;Milyen típusú nyomtató a mátrix nyomtató?;Ütő nyomtató;Tintasugaras nyomtató;Lézernyomtató;Hőnyomtató
