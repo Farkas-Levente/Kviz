@@ -19,7 +19,7 @@
 
         <!--Kviz-->
 
-        <WindowsFormsHost HorizontalAlignment="Left" Height="450" Margin="801,-26,-826,-5" VerticalAlignment="Top" Width="817"/>
+        
         <Label Name="tantargy" Content="Tantárgy" Margin="1156,0,-461,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="20"/>
         <Label Name="temakor" Content="Téma" Margin="1156,23,-461,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="20"/>
         <Label Name="kerdes" Content="Kérdés" Margin="1136,58,-477,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="36"/>
