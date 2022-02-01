@@ -138,6 +138,23 @@ namespace Tanulo_Kviz
 
         private void General_Click(object sender, RoutedEventArgs e)
         {
+            if(selectedTema == null && selectedTargy == null)
+            {
+                MessageBox.Show("Kérem válasszon tantárgyat és témakört!");
+                return;
+            }
+
+            else if (selectedTema == null)
+            {
+                MessageBox.Show("Kérem válasszon témakört!");
+                return;
+            }
+
+            else if (selectedTargy == null)
+            {
+                MessageBox.Show("Kérem válasszon tantárgyat!");
+                return;
+            }
             testLabel.Content = selectedTargy.nev;
             testlabel2.Content = selectedTema.nev;
         }
