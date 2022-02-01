@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Tanulo_Kviz"
         mc:Ignorable="d"
         Title="Tanulás ellenőrző kvíz" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="folap">
         <Label Content="Válaszd ki a kvíz témáját:" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label Content="Tantárgy:" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" FontSize="16"/>
         <ComboBox Name="targyBox" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="TargyBox_SelectionChanged">
@@ -16,42 +16,47 @@
         <ComboBox Name="temakorBox" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="TemaBox_SelectionChanged"/>
         <Button Name="GeneralGomb" Content="Feladatok generálása" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="General_Click"/>
         <Label Name="testLabel" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,147,0,0" VerticalAlignment="Top"/>
-
-        <!--Kviz-->
-
-
-        <Label Name="tantargy" Content="Tantárgy" Margin="1156,0,-461,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="20"/>
-        <Label Name="temakor" Content="Téma" Margin="1156,23,-461,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="20"/>
-        <Label Name="kerdes" Content="Kérdés" Margin="1136,58,-477,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="36"/>
-        <Viewbox Height="36" Margin="801,150,-801,211">
-            <RadioButton x:Name="valasz1" Content="Válasz 1"></RadioButton>
-        </Viewbox>
-        <Viewbox Height="36" Margin="801,195,-801,166">
-            <RadioButton x:Name="valasz2" Content="Válasz 2"></RadioButton>
-        </Viewbox>
-        <Viewbox Height="36" Margin="801,240,-801,121">
-            <RadioButton x:Name="valasz3" Content="Válasz 3"></RadioButton>
-        </Viewbox>
-        <Viewbox Height="36" Margin="801,285,-801,76">
-            <RadioButton x:Name="valasz4" Content="Válasz 4"></RadioButton>
-        </Viewbox>
-        <Label Content="1/10" HorizontalContentAlignment="Center" Margin="1156,348,-464,0" VerticalAlignment="Top" Width="100" FontSize="16"/>
-        <Button Name="vissza" Content="Vissza" HorizontalAlignment="Left" Margin="811,383,-99,0" VerticalAlignment="Top" Width="80" Height="30"/>
-        <Button Name="kovetkezo" Content="Következő" HorizontalAlignment="Left" Margin="1526,383,-814,0" VerticalAlignment="Top" Width="80" Height="30"/>
-        <Button Name="oldal_1" Content="" HorizontalAlignment="Left" Margin="896,388,-162,0" VerticalAlignment="Top" Width="58" Height="20"/>
-        <Button Name="oldal_2" Content="" HorizontalAlignment="Left" Margin="959,388,-225,0" VerticalAlignment="Top" Width="58" Height="20"/>
-        <Button Name="oldal_10" Content="" HorizontalAlignment="Left" Margin="1463,388,-729,0" VerticalAlignment="Top" Width="58" Height="20"/>
-        <Button Name="oldal_9" Content="" HorizontalAlignment="Left" Margin="1400,388,-666,0" VerticalAlignment="Top" Width="58" Height="20"/>
-        <Button Name="oldal_8" Content="" HorizontalAlignment="Left" Margin="1337,388,-603,0" VerticalAlignment="Top" Width="58" Height="20"/>
-        <Button Name="oldal_7" Content="" HorizontalAlignment="Left" Margin="1274,388,-540,0" VerticalAlignment="Top" Width="58" Height="20"/>
-        <Button Name="oldal_6" Content="" HorizontalAlignment="Left" Margin="1211,388,-477,0" VerticalAlignment="Top" Width="58" Height="20"/>
-        <Button Name="oldal_5" Content="" HorizontalAlignment="Left" Margin="1148,388,-414,0" VerticalAlignment="Top" Width="58" Height="20"/>
-        <Button Name="oldal_4" Content="" HorizontalAlignment="Left" Margin="1085,388,-351,0" VerticalAlignment="Top" Width="58" Height="20"/>
-        <Button Name="oldal_3" Content="" HorizontalAlignment="Left" Margin="1022,388,-288,0" VerticalAlignment="Top" Width="58" Height="20"/>
         <Label x:Name="testlabel2" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,178,0,0" VerticalAlignment="Top"/>
         <Label x:Name="testLabel3" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,238,0,0" VerticalAlignment="Top"/>
         <Label x:Name="testlabel4" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,269,0,0" VerticalAlignment="Top"/>
+        <!--Kviz-->
+
+        <Grid Visibility="Hidden">
+            <Label Name="tantargy" Content="Tantárgy" Margin="349,1,346,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="20"/>
+            <Label Name="temakor" Content="Téma" Margin="349,24,346,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="20"/>
+            <Label Name="kerdes" Content="Kérdés" Margin="329,59,330,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="36"/>
+            <Viewbox Height="36" Margin="-6,162,6,221">
+                <RadioButton x:Name="valasz1" Content="Válasz 1"></RadioButton>
+            </Viewbox>
+            <Viewbox Height="36" Margin="-6,207,6,176">
+                <RadioButton x:Name="valasz2" Content="Válasz 2"></RadioButton>
+            </Viewbox>
+            <Viewbox Height="36" Margin="-6,252,6,131">
+                <RadioButton x:Name="valasz3" Content="Válasz 3"></RadioButton>
+            </Viewbox>
+            <Viewbox Height="36" Margin="-6,297,6,86">
+                <RadioButton x:Name="valasz4" Content="Válasz 4"></RadioButton>
+            </Viewbox>
+            <Label Content="1/10" HorizontalContentAlignment="Center" Margin="349,349,343,0" VerticalAlignment="Top" Width="100" FontSize="16"/>
+            <Button Name="vissza" Content="Vissza" HorizontalAlignment="Left" Margin="4,384,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+            <Button Name="kovetkezo" Content="Következő" HorizontalAlignment="Left" Margin="719,384,-7,0" VerticalAlignment="Top" Width="80" Height="30"/>
+            <Button Name="oldal_1" Content="" HorizontalAlignment="Left" Margin="89,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>
+            <Button Name="oldal_2" Content="" HorizontalAlignment="Left" Margin="152,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>
+            <Button Name="oldal_10" Content="" HorizontalAlignment="Left" Margin="656,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>
+            <Button Name="oldal_9" Content="" HorizontalAlignment="Left" Margin="593,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>
+            <Button Name="oldal_8" Content="" HorizontalAlignment="Left" Margin="530,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>
+            <Button Name="oldal_7" Content="" HorizontalAlignment="Left" Margin="467,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>
+            <Button Name="oldal_6" Content="" HorizontalAlignment="Left" Margin="404,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>
+            <Button Name="oldal_5" Content="" HorizontalAlignment="Left" Margin="341,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>
+            <Button Name="oldal_4" Content="" HorizontalAlignment="Left" Margin="278,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>
+            <Button Name="oldal_3" Content="" HorizontalAlignment="Left" Margin="215,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>
+            
+        </Grid>
+
+
 
 
     </Grid>
+
 </Window>
+

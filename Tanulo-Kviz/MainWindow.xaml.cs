@@ -32,6 +32,8 @@ namespace Tanulo_Kviz
 
             InitializeComponent();
 
+            
+
             temakorBox.IsEnabled = false;
 
             
