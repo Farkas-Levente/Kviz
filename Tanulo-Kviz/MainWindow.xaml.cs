@@ -43,6 +43,10 @@ namespace Tanulo_Kviz
             tantargyNyilvantarto.Add(magyar.nev, magyar);
             targyBox.Items.Add(magyar.nev);
 
+            Tantargy informatika = new Tantargy("informatika.txt");
+            tantargyNyilvantarto.Add(informatika.nev, informatika);
+            targyBox.Items.Add(informatika.nev);
+
         }
 
         public class Tantargy
@@ -96,7 +100,7 @@ namespace Tanulo_Kviz
         public class Kerdes
         {
             public string kerdes;
-            public string helyseValasz;
+            public string helyesValasz;
             public string valasz2;
             public string valasz3;
             public string valasz4;
@@ -105,10 +109,10 @@ namespace Tanulo_Kviz
             {
                 string[] splitek = sor.Split(';');
                 kerdes = splitek[2];
-                helyseValasz = splitek[3];
+                helyesValasz = splitek[3];
                 valasz2 = splitek[4];
                 valasz3 = splitek[5];
-                valasz4 = splitek[6];   
+                //valasz4 = splitek[6];   
             }
         }
 
