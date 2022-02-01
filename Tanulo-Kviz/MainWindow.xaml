@@ -14,7 +14,7 @@
         </ComboBox>
         <Label Content="Témakör" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" FontSize="16"/>
         <ComboBox Name="temakorBox" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="TemaBox_SelectionChanged"/>
-        <Button Content="Feladatok generálása" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="160" Height="70"/>
+        <Button Name="GeneralGomb" Content="Feladatok generálása" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="General_Click"/>
         <Label Name="testLabel" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,147,0,0" VerticalAlignment="Top"/>
 
         <!--Kviz-->
@@ -48,6 +48,7 @@
         <Button Name="oldal_5" Content="" HorizontalAlignment="Left" Margin="1148,388,-414,0" VerticalAlignment="Top" Width="58" Height="20"/>
         <Button Name="oldal_4" Content="" HorizontalAlignment="Left" Margin="1085,388,-351,0" VerticalAlignment="Top" Width="58" Height="20"/>
         <Button Name="oldal_3" Content="" HorizontalAlignment="Left" Margin="1022,388,-288,0" VerticalAlignment="Top" Width="58" Height="20"/>
+        <Label x:Name="testlabel2" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,178,0,0" VerticalAlignment="Top"/>
 
 
     </Grid>

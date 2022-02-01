@@ -32,6 +32,7 @@ namespace Tanulo_Kviz
 
             InitializeComponent();
 
+            
             Tantargy fizika = new Tantargy("fizika.txt");
             tantargyNyilvantarto.Add(fizika.nev, fizika);
             targyBox.Items.Add(fizika.nev.ToUpper());
@@ -40,16 +41,7 @@ namespace Tanulo_Kviz
             tantargyNyilvantarto.Add(matek.nev, matek);
             targyBox.Items.Add(matek.nev.ToUpper());
 
-
-
         }
-
-
-
-
-
-
-
 
         public class Tantargy
         {
@@ -108,12 +100,14 @@ namespace Tanulo_Kviz
         {
             temakorBox.Items.Clear();
             temakorBox.Items.Clear();
+
             Tantargy targy = null;
             string selectedTargyString = targyBox.SelectedItem.ToString();
             string kisbetus =  selectedTargyString.ToLower();
-            testLabel.Content = kisbetus;
             tantargyNyilvantarto.TryGetValue(kisbetus, out targy);
+
             if (targy == null) return;
+
             selectedTargy = targy;
             foreach(Tema tema in targy.temak)
             {
@@ -127,13 +121,19 @@ namespace Tanulo_Kviz
 
             if(temakorBox.SelectedItem == null || temakorBox.Items.Count <= 0) { return; }
             
-           string selectedTemaString = temakorBox.SelectedItem.ToString();
-            
+            string selectedTemaString = temakorBox.SelectedItem.ToString();
             string kisbetus = selectedTemaString.ToLower();
-            testLabel.Content = kisbetus;
             selectedTargy.temaNyilvantarto.TryGetValue(kisbetus, out tema);
+
             if (tema == null) return;
+
             selectedTema = tema;
+        }
+
+        private void General_Click(object sender, RoutedEventArgs e)
+        {
+            testLabel.Content = selectedTargy.nev;
+            testlabel2.Content = selectedTema.nev;
         }
     }
 }
