@@ -1,0 +1,44 @@
+irodalom; orosz irodalom; Ki alkotta meg a "dramaiatlan dramat"?; Anton Pavlovics Csehov; Nyikolaj Vasziljevics Gogol; Lev Nyikolajevics Tolsztoj; Alekszandr Szergejevics Puskin
+irodalom; orosz irodalom; Csinovnyik...; kishivatalnok.; magas rangú hivatalnok.; aki mindenhez ért.; aki nem hódol be a hatalomnak.
+irodalom; orosz irodalom; A groteszk...; a félelmetes, torz, fenséges vonások ötvözése komikus elemekkel.; egymással összeillő elemek párosítása.; különböző érzékterületekhez tartozó érzetek egymás mellé helyezése.; ellentétes jelentésű szavakból álló szószerkezet.
+irodalom; orosz irodalom; Az orosz realizmus leginkább...; a prózai művekben jelent meg.; a lírában jelent meg.; a drámában jelent meg.; mindhárom műnemre jellemző.
+irodalom; orosz irodalom; Ivan Iljics...; úgy érzi, hogy nem úgy élt, ahogy kellett volna.; hamar elfogadja, hogy meg fog halni.; utolsó napjai már nyugodtan telnek.; nem békél meg a halállal.
+irodalom; orosz irodalom; Tolsztoj művében az időrend...; először visszatekintő, majd lineáris; végig kronologikus; hagyományos, lineáris; egyszerű visszatekintő
+irodalom; orosz irodalom; Mely műfajokban alkotott igazán maradandót Csehov?; novella és dráma; novella és regény; regény és dráma; tragédia és komédia
+irodalom; orosz irodalom; Az analitikus drámát azért nevezzük így, mert...; a múlt eseményeinek elemzése történik; a nézőnek aprólékosan kell elemeznie minden mozzanatot; laborban játszódik; a cselekmény fordulatos, de csak lassan halad
+irodalom; orosz irodalom; Csehov novelláiban fő (kifejező)eszközei ...; a szereplők párbeszédei, töprengései; konfliktusokkal teli cselekmeny; a részletező bemutatás; fordulatos cselekményvezetés
+irodalom; orosz irodalom; Mikor elt Gogol?; 1799-1839; 1800-1841; 1809-1852; 1801-1846
+irodalom; orosz irodalom; Tolsztoj Ivan Iljics halála c. művének műfaja...; kisregeny; novella; drama; nagyregeny
+irodalom; orosz irodalom; Melyik városban játszódik A köpönyeg című elbeszélés?; Szentpétervár; Moszkva; Krím; Carszkoje Szelo
+irodalom; orosz irodalom; Melyik évtizedre tehető az orosz romantika kibontakozása?; 1820-as évek; 1840-es évek; 1860-as évek; 1880-as évek
+irodalom; orosz irodalom; Anyegin miért költözik vidékre?; Nagybátyja hivatja; Újat akar látni; Apja meghal; Szerelme után fut
+irodalom; orosz irodalom; Mi volt a pontos feladata Akakij Akakijevicsnek a hivatalban?; Másolás; Számlák kiállítása; A könyvelés ellenőrzése; A bejelentések kezelése
+irodalom; orosz irodalom; Hogyan hal meg a köpönyeg elrablása után Akakij Akakijevics?; Belázasodik, és nem épül fel; Öngyilkos lesz; Legurul a lépcsőn; Egy ismeretlen társaság meglincseli
+irodalom; Ady Endre költészete; Melyik irodalmi irányzathoz kötjük Ady költészetét?; klasszikus modernség; romatika; klasszicizmus; realizmus;
+irodalom; Ady Endre költészete; Hol született Ady?; Érmindszent; Érd; Érszentes; Szentes
+irodalom; Ady Endre költészete; Melyik kötete hozta meg számára a sikert?; Új versek; A halottak élén; Minden-Titkok versei; Szeretném, ha szeretnének
+irodalom; Ady Endre költészete; Kinek a feleségébe szeretett bele Ady? Diósy Ödön; Diószegi Ubul; Dióváry Benő; Diószegi Manó
+irodalom; Ady Endre költészete; Mi jellemző a Lédával való viszonyára?; folytonos harcok, csatározások, vad kibékülések; harmonikus, kiegyensúlyozott kapcsolat; udvarlás, házasság, gyerekek; hosszú udvarlás, Léda elvált és Ady felesége lett 
+irodalom; Ady Endre költészete; Ady születésének halálának dátumai:; 1877 - 1919; 1870 - 1920; 1877 - 1941; 1880 - 1930
+irodalom; Ady Endre költészete; Hol élt együtt Csinszkáva?; Csucsa; Chicago; Csikóstöttös; Csongrád
+irodalom; Ady Endre költészete; Melyik nem Ady vers címe?; Tiszta szívvel; A magyar Ugaron; Elbocsátó, szép üzenet; A föl-földobott kő 
+irodalom; Ady Endre költészete; Ki volt Góg és Magóg?; bibliai szereplők, pogány népek fejedelmei; a honfoglaló vezérek közül kettő; Ady két barátja; Ady és Léda becenevei
+irodalom; Ady Endre költészete; Mikor jelent meg a Nyugat első száma?; 1908; 1909; 1900; 1906
+irodalom; Ady Endre költészete; Mi a perdita?; Utcalány szépítő kifejezése; Kutyafajta; A szerelem latinul; Egy geometriai forma
+irodalom; Ady Endre költészete; Melyik versben jeleik meg Verecke híres útja?; Góg és Magóg fia vagyok én...; Harc a Nagyúrral; A magyar Ugaron; A Hortobágy poétája
+irodalom; Ady Endre költészete; Melyik tanult versben van kacagó szél?; A magyar Ugaron; Harc a Nagyúrral; A Hortobágy poétája; Góg és Magóg fia vagyok én...
+irodalom; Mikszáth novellái; Mi a címe híres novelásköteteinek?; "A tót afyafiak" és "A jó palócok"; "A híres palócok" és "A jó atyafiak"; "A tót atyafiak" és "A híres palócok"; "A híres atyafiak" és "A jó palócok"
+irodalom; Mikszáth novellái; Kik a palócok?; Felvidéken élő magyarok; Erdélyben élő románok; Magyarországon élő szlovákok; Katolikus szerzetesek, akik szent Pál tanítását követték
+irodalom; Mikszáth novellái; Melyik nem szerkezeti egység?; tárgyalás; bonyodalom; előkészítés; megoldás
+irodalom; Mikszáth novellái; Mi volt a bágyi csoda?; A patak vize visszafelé kezdett el folyni; A tél kellős közepén rózsa kezdett el nyílni a mezőn; A liszt nem fogyott ki a zsákokból; A föld mélyéről arany bukkant elő
+irodalom; Mikszáth novellái; Melyik NEM jellemzi Mikszáth novelláit?; társadalmi problémák a középpontban; élőbeszédszerű nyelvezet; népi hiedelmek, babonák; szabad függő beszéd alkalmazása
+irodalom; Mikszáth novellái; Mit hazudott Vér Klára Vőnekinéről férjének?; élesztőért jött; pletykákat mesélt; sajtot árult; megcsodálta a lovakat
+irodalom; Mikszáth novellái; Mit jelez a fehér rózsa a novellában?; szabadon találkozhatnak a szeretők; ártatlanság; szerelem; házastársi hűség
+irodalom; Mikszáth novellái; Milyen stílusirányzatok jellemezték Mikszáth művészetét?; romantika; barokk; klasszicizmus; szentimentalizmus
+irodalom; Mikszáth novellái; A novella melyik része ez? A kezdő eseményeket valamilyen változás kibillenti alapvető helyzetükből.; Bonyodalom; Alaphelyzet; Kibontakozás; Tetőpont
+irodalom; Mikszáth novellái; Melyik novella rövid összefoglalása ez? Vér Klári, a csapodár asszony hűtlensége.; A bágyi csoda; Szegény Gélyi János lovai; Két major regénye; A gózoni Szűz Mária
+irodalom; Mikszáth novellái; Melyik alkotásában található: Az a fekete folt?; A tót atyafiak; A jó palócok; Beszterce ostroma; Új Zrínyiász
+irodalom; Mikszáth novellái; Mikor született Mikszáth?; 1847; 1917; 1910; 1823
+irodalom; Mikszáth novellái; Hol született Mikszáth?; Szklabonyán; Monoron; Debrecenben; Szegeden
+irodalom; Mikszáth novellái; Ki volt Mikszáth felesége?; Mauks Ilona; Szendrey Júlia; Ercsey Julianna; Laborfalvy Róza
+irodalom; Mikszáth novellái; Mi NEM volt Mikszáth?; Művelődésügyi miniszter; A Kisfaludy Társaság tagja; Az Akadémia tagja; A kormánypárt országgyűlési képviselője

@@ -39,9 +39,9 @@ namespace Tanulo_Kviz
             tantargyNyilvantarto.Add(fizika.nev, fizika);
             targyBox.Items.Add(fizika.nev.ToUpper());
 
-            Tantargy matek = new Tantargy("matek.txt");
-            tantargyNyilvantarto.Add(matek.nev, matek);
-            targyBox.Items.Add(matek.nev.ToUpper());
+            Tantargy magyar = new Tantargy("magyar.txt");
+            tantargyNyilvantarto.Add(magyar.nev, magyar);
+            targyBox.Items.Add(magyar.nev.ToUpper());
 
         }
 
@@ -138,15 +138,9 @@ namespace Tanulo_Kviz
 
         private void General_Click(object sender, RoutedEventArgs e)
         {
-            if(selectedTema == null && selectedTargy == null)
+            if (selectedTema == null && selectedTargy == null)
             {
                 MessageBox.Show("Kérem válasszon tantárgyat és témakört!");
-                return;
-            }
-
-            else if (selectedTema == null)
-            {
-                MessageBox.Show("Kérem válasszon témakört!");
                 return;
             }
 
