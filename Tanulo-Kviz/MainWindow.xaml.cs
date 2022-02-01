@@ -181,6 +181,9 @@ namespace Tanulo_Kviz
 
             kvizLap.Visibility = Visibility.Visible;
             foLap.Visibility = Visibility.Hidden;
+
+            tantargy.Content = selectedTargy.nev;
+            temakor.Content = selectedTema.nev;
         }
     }
 }
