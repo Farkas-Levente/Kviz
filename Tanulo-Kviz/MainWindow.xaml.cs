@@ -25,32 +25,29 @@ namespace Tanulo_Kviz
 
         public Dictionary<string, Tantargy> tantargyNyilvantarto = new Dictionary<string, Tantargy>();
         public List<Tantargy> targyak = new List<Tantargy>();
+        Tantargy selectedTargy = null;
+        Tema selectedTema = null;
         public MainWindow()
         {
 
             InitializeComponent();
 
+            temakorBox.IsEnabled = false;
+
+            
             Tantargy fizika = new Tantargy("fizika.txt");
             tantargyNyilvantarto.Add(fizika.nev, fizika);
-            targyBox.Items.Add(fizika.nev.ToUpper());
+            targyBox.Items.Add(fizika.nev);
 
-            Tantargy matek = new Tantargy("matek.txt");
-            tantargyNyilvantarto.Add(matek.nev, matek);
-            targyBox.Items.Add(matek.nev.ToUpper());
-
-
+            Tantargy magyar = new Tantargy("magyar.txt");
+            tantargyNyilvantarto.Add(magyar.nev, magyar);
+            targyBox.Items.Add(magyar.nev);
 
         }
 
-
-
-
-
-
-
-
         public class Tantargy
         {
+            public Dictionary<string, Tema> temaNyilvantarto = new Dictionary<string, Tema>();
             public List<Tema> temak = new List<Tema>();
             public string nev;
 
@@ -70,6 +67,7 @@ namespace Tanulo_Kviz
                     {
                         temaFajtak.Add(temaNev);
                         Tema ujTema = new Tema(temaNev,allomany);
+                        temaNyilvantarto.Add(ujTema.nev, ujTema);
                         temak.Add(ujTema);
                     }
                 }
@@ -79,7 +77,7 @@ namespace Tanulo_Kviz
         public class Tema
         {
             List<Kerdes> kerdesek = new List<Kerdes>();
-           public string nev;
+            public string nev;
             public Tema(string nev,string[] allomany)
             {
                 this.nev = nev;
@@ -103,16 +101,63 @@ namespace Tanulo_Kviz
         private void TargyBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             temakorBox.Items.Clear();
+            temakorBox.Items.Clear();
+            selectedTargy = null;
+            selectedTema = null;
+
             Tantargy targy = null;
             string selectedTargyString = targyBox.SelectedItem.ToString();
-            string kisbetus =  selectedTargyString.ToLower();
-            testLabel.Content = kisbetus;
-            tantargyNyilvantarto.TryGetValue(kisbetus, out targy);
+            testLabel.Content = selectedTargyString;
+            tantargyNyilvantarto.TryGetValue(selectedTargyString, out targy);
+
+            temakorBox.IsEnabled = false;
+
             if (targy == null) return;
+
+            temakorBox.IsEnabled = true;
+
+            selectedTargy = targy;
             foreach(Tema tema in targy.temak)
             {
                 temakorBox.Items.Add(tema.nev);
             }
+        }
+
+        private void TemaBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+
+            if(temakorBox.SelectedItem == null || temakorBox.Items.Count <= 0) { return; }
+            Tema tema = null;
+            string selectedTemaString = temakorBox.SelectedItem.ToString();
+            
+            testlabel2.Content = selectedTemaString;
+            selectedTargy.temaNyilvantarto.TryGetValue(selectedTemaString, out tema);
+
+            if (tema == null) return;
+
+            selectedTema = tema;
+        }
+
+        private void General_Click(object sender, RoutedEventArgs e)
+        {
+            if (selectedTema == null && selectedTargy == null)
+            {
+                MessageBox.Show("Kérem válasszon tantárgyat és témakört!");
+                return;
+            }
+            else if(selectedTema == null)
+            {
+                MessageBox.Show("Kérem válasszon témakört!");
+                return;
+            }
+            else if (selectedTargy == null)
+            {
+                MessageBox.Show("Kérem válasszon tantárgyat!");
+                return;
+            }
+            testLabel3.Content = selectedTargy.nev;
+            testlabel4.Content = selectedTema.nev;
         }
     }
 }
