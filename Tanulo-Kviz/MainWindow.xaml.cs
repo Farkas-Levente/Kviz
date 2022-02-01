@@ -25,6 +25,8 @@ namespace Tanulo_Kviz
 
         public Dictionary<string, Tantargy> tantargyNyilvantarto = new Dictionary<string, Tantargy>();
         public List<Tantargy> targyak = new List<Tantargy>();
+        Tantargy selectedTargy = null;
+        Tema selectedTema = null;
         public MainWindow()
         {
 
@@ -51,6 +53,7 @@ namespace Tanulo_Kviz
 
         public class Tantargy
         {
+            public Dictionary<string, Tema> temaNyilvantarto = new Dictionary<string, Tema>();
             public List<Tema> temak = new List<Tema>();
             public string nev;
 
@@ -70,6 +73,7 @@ namespace Tanulo_Kviz
                     {
                         temaFajtak.Add(temaNev);
                         Tema ujTema = new Tema(temaNev,allomany);
+                        temaNyilvantarto.Add(ujTema.nev, ujTema);
                         temak.Add(ujTema);
                     }
                 }
@@ -79,7 +83,7 @@ namespace Tanulo_Kviz
         public class Tema
         {
             List<Kerdes> kerdesek = new List<Kerdes>();
-           public string nev;
+            public string nev;
             public Tema(string nev,string[] allomany)
             {
                 this.nev = nev;
@@ -103,16 +107,33 @@ namespace Tanulo_Kviz
         private void TargyBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             temakorBox.Items.Clear();
+            temakorBox.Items.Clear();
             Tantargy targy = null;
             string selectedTargyString = targyBox.SelectedItem.ToString();
             string kisbetus =  selectedTargyString.ToLower();
             testLabel.Content = kisbetus;
             tantargyNyilvantarto.TryGetValue(kisbetus, out targy);
             if (targy == null) return;
+            selectedTargy = targy;
             foreach(Tema tema in targy.temak)
             {
                 temakorBox.Items.Add(tema.nev);
             }
+        }
+
+        private void TemaBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Tema tema = null;
+
+            if(temakorBox.SelectedItem == null || temakorBox.Items.Count <= 0) { return; }
+            
+           string selectedTemaString = temakorBox.SelectedItem.ToString();
+            
+            string kisbetus = selectedTemaString.ToLower();
+            testLabel.Content = kisbetus;
+            selectedTargy.temaNyilvantarto.TryGetValue(kisbetus, out tema);
+            if (tema == null) return;
+            selectedTema = tema;
         }
     }
 }
