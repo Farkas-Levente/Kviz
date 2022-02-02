@@ -124,15 +124,19 @@ namespace Tanulo_Kviz
                 helyesValasz = splitek[3];
                 valasz2 = splitek[4];
                 valasz3 = splitek[5];
-                
+
                 valasz4 = splitek[6];
+                FeltöltValaszok();
+
+            }
+
+            public void FeltöltValaszok()
+            {
                 valaszok.Add(helyesValasz);
                 valaszok.Add(valasz2);
                 valaszok.Add(valasz3);
                 valaszok.Add(valasz4);
-
             }
-            
         }
 
         private void TargyBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -224,20 +228,25 @@ namespace Tanulo_Kviz
         {
             Random random = new Random();
             List<string> tempValasz = new List<string>();
+            
             tempValasz = ujKerdes.valaszok;
             List<RadioButton> tempButton = new List<RadioButton>();
             tempButton = buttons;
 
+            List<string> removeoltak = new List<string>();
             for (int i = 0; i < 4; i++)
             {
                
                 int randomIndex = random.Next(0, tempValasz.Count);
                
                 buttons[i].Content = tempValasz[randomIndex];
+                string removeoltValasz = tempValasz[randomIndex];
+                removeoltak.Add(removeoltValasz);
                 tempValasz.RemoveAt(randomIndex);
+                
                
             }
-
+            ujKerdes.valaszok = removeoltak;
             kerdes.Content = ujKerdes.kerdes;
             oldalIndex = betoltottKerdesek.IndexOf(ujKerdes);
             
@@ -246,12 +255,15 @@ namespace Tanulo_Kviz
         private void Kovetkezo_Oldal(object sender, RoutedEventArgs e)
         {
             if (oldalIndex + 1 >= betoltottKerdesek.Count) return;
+           // betoltottKerdesek[oldalIndex +1].FeltöltValaszok();
             BetoltKerdes(betoltottKerdesek[oldalIndex +1]);
+          
         }
 
         private void elozoLap_Betolt(object sender, RoutedEventArgs e)
         {
             if (oldalIndex <= 0) return;
+           // betoltottKerdesek[oldalIndex - 1].FeltöltValaszok();
             BetoltKerdes(betoltottKerdesek[oldalIndex - 1]);
         }
     }
