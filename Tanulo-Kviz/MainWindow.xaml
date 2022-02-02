@@ -24,9 +24,9 @@
         <!--Kviz-->
 
         <Grid Name="kvizLap" Visibility="Hidden">
-            <Label Name="tantargy" Content="Tantárgy" Margin="349,1,346,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="20"/>
-            <Label Name="temakor" Content="Téma" Margin="349,24,346,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="20"/>
-            <Label Name="kerdes" Content="Kérdés" Margin="329,59,330,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="36"/>
+            <Label Name="tantargy" Content="Tantárgy" Margin="215,1,179,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="20"/>
+            <Label Name="temakor" Content="Téma" Margin="186,24,161,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="20" RenderTransformOrigin="0.5,0.5"/>
+            <Label Name="kerdes" Content="Kérdés" Margin="10,59,10,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="24" Height="73"/>
             <Viewbox Height="36" Margin="-6,162,6,221">
                 <RadioButton x:Name="valasz1" Content="Válasz 1" Width="326"></RadioButton>
             </Viewbox>
@@ -52,8 +52,8 @@
             <Button Name="oldal_5" Content="" HorizontalAlignment="Left" Margin="341,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>
             <Button Name="oldal_4" Content="" HorizontalAlignment="Left" Margin="278,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>
             <Button Name="oldal_3" Content="" HorizontalAlignment="Left" Margin="215,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>
-            <Label Name="testLabel5" Content="testLabel" HorizontalAlignment="Left" Margin="152,99,0,0" VerticalAlignment="Top" Width="647"/>
-            <Label x:Name="testLabel6" Content="testLabel" HorizontalAlignment="Left" Margin="152,67,0,0" VerticalAlignment="Top" Width="647"/>
+            <Label Name="testLabel5" Content="testLabel" HorizontalAlignment="Left" Margin="492,156,0,0" VerticalAlignment="Top" Width="133"/>
+            <Label x:Name="testLabel6" Content="testLabel" HorizontalAlignment="Left" Margin="494,187,0,0" VerticalAlignment="Top" Width="131"/>
 
 
         </Grid>

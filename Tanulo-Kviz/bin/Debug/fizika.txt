@@ -1,45 +1,45 @@
-fizika; hőtan; A részecskék rendezetlen hőmozgását ... -mozgásnak nevezzük.; Brown; Braun; Bond; Boyle
-fizika; hőtan; Az ideális gáz belső energiája részecskék ... energiájának összege.; mozgási; helyzeti; hő; termikus
-fizika; hőtan; Mennyi egy kétatomos molekula szabadsági fokainak száma?; 5; 6; 2; 3
-fizika; hőtan; A szemüveg bepárásodik.; lecsapódás; fagyás; olvadás; párolgás
-fizika; hőtan; A fagyi lecsorog a tölcséren.; olvadás; fagyás; párolgás; lecsapódás
-fizika; hőtan; A mélyhűtőben a vízből jég lesz.; fagyás; olvadás; lecsapódás; párolgás
-fizika; hőtan; A forró leves gőzölög.; párolgás; lecsapódás; olvadás; fagyás
-fizika; hőtan; Melyik anyagok szilárd halmazállapotúak szobahőmérsékleten?; vas; olaj; tej; hidrogén
-fizika; hőtan; Melyik anyagok folyékony halmazállapotúak szobahőmérsékleten?; higany; agyag; fa; alumínium
-fizika; hőtan; Melyik anyagok légnemű halmazállapotúak szobahőmérsékleten?; hidrogén; ecetsav; sósav; olaj
-fizika; hőtan; Melyik halmazállapot-változásra gondoltam? A forró, légnemű anyag újra folyékonnyá válik, ha egy hideg felülettel (pl. fedővel) érintkezik.; lecsapódás; párolgás; olvadás; forrás
-fizika; hőtan; Melyik halmazállapot-változásra gondoltam? A folyékony anyag belsejében gőzbuborékok keletkeznek, amelyek a felszínre kerülnek, majd a légtérbe.; forrás; olvadás; párolgás; lecsapódás
-fizika; hőtan; Melyik halmazállapot-változásra gondoltam? A folyékony anyagból szilárd anyag lesz.; fagyás; lecsapódás; forrás; párolgás
-fizika; hőtan; Melyik halmazállapot-változásra gondoltam? A szilárd anyagból folyékony anyag lesz.; olvadás; párolgás; fagyás; lecsapódás
-fizika; hőtan; Melyik halmazállapot-változásra gondoltam? A folyékony anyagból légnemű keletkezik. A részecskék a folyadék felszínéről lépnek a gáztérbe.; párolgás; olvadás; fagyás; forrás
-fizika; elektromosság; Mi a feszültség jele?; U; V; I; R
-fizika; elektromosság; Mi a feszültség mértékegysége?; V; A; F; U
-fizika; elektromosság; Mi az áramerősség jele?; I; U; A; R
-fizika; elektromosság; Mi az áramerősség mértékegysége?; A; I; W; V
-fizika; elektromosság; Mi az ellenállás jele?; R; I; V; Ω
-fizika; elektromosság; Mi az ellenállás mértékegysége?; Ω; V; A; R
-fizika; elektromosság; Ohm törvénye melyik két mennyiség között állapít meg összefüggést?; feszültség, áramerősség; feszültség, ellenállás;  áramerősség, ellenállás; egyik sem
-fizika; elektromosság; Ohm törvénye értelmében az adott fogyasztón mért feszültség és áramerősség:; egyenesen arányos; egyenlő; fordítottan arányos; párhuzamos
-fizika; elektromosság; Mekkora az ellenállás, ha 20 V a feszültség és 10 A az áramerősség?; 2 Ω; 0,5 Ω; 20 Ω; 200 Ω
-fizika; elektromosság; Mekkora a feszültség ha az ellenállás 20 Ω és 10 A az áramerősség?; 200 V; 2 V; 0,5 V; 20 V
-fizika; elektromosság; Mekkora az áramerősség, ha 4Ω az ellenállás és a feszültség 24V?; 6 A; 96 A; 20 A; 0,16 A
-fizika; elektromosság; Mi az idő jele?; t; Q; I; T
-fizika; elektromosság; Mi a töltés jele?; Q; C; T; R
-fizika; elektromosság; Mi a fogyasztó?; izzólámpa; párhuzamos kapcsolás; amper; elektroszkóp
-fizika; elektromosság; Mi a feszültségmérő?; párhuzamos kapcsolás; amper; izzólámpa; elektroszkóp
-fizika; csillagászat; Milyen messze van a Föld a Naptól?; 149,6 millió km; 227,94 millió km; 108 millió km; 98,54 millió km
-fizika; csillagászat; Mennyi idő alatt kerüli meg teljesen a Mars a Napot?; 687 nap alatt; 225 nap alatt; 175 nap alatt; 57 nap alatt
-fizika; csillagászat; Melyik csillagkép található a Göncölszekér formációján?; A Nagy Medve; A Kis Medve; A Vízöntő; Egyik sem
-fizika; csillagászat; Milyen alakú a galaxis Tejútrendszer?; Spirál; Ovális; Szabálytalan; Elliptikus
-fizika; csillagászat; A Naprendszer mely bolygójának vannak gyűrűi?; Szaturnusz; Vénusz; Neptunusz; Mars
-fizika; csillagászat; A Naprendszer mely bolygójának van a legtöbb holdja?; Szaturnusz; Föld; Neptunusz; Jupiter
-fizika; csillagászat; Ki volt az első a ki bebizonyította, hogy nem a Nap kering a Föld körül?; Galileo Galilei; Nikolausz Kopernikusz; Számoszi Arisztarkhosz; Egyikük sem
-fizika; csillagászat; Milyen állatot küldtek először az űrbe?; gyümölcslegyeket; majmot; kutyát; macskát
-fizika; csillagászat; Mennyi idő alatt ér el a Nap fénye a Földre?; 8min 20sec; kevesebb mint 1sec alatt; 18min  20sec; 6min
-fizika; csillagászat; Melyik nem Föld típusú bolygó?; Jupiter; Vénusz; Merkúr; Föld
-fizika; csillagászat; Mérések alapján mennyi évre tehetjük a világegyetem korát?; 13,7 milliárd év; 1 millió év; 8,3 milliárd év; 3,9 milliárd év
-fizika; csillagászat; Melyik évben szálltak le a Holdra először az emberek?; 1969; 1956; 2002; 1989
-fizika; csillagászat; Melyik évben állt pályára a Hubble-űrtávcső?; 1990; 2001; 1978; 1992
-fizika; csillagászat; Milyen messze van a Földtől a Hold?; 384000 km; 567000 km; 100000 km; 345000 km
-fizika; csillagászat; Mikor jutott ki az első szovjet ember a világűrbe?; 1961; 1983; 1999; 2001
+fizika; hőtan; A részecskék rendezetlen hőmozgását ... -mozgásnak nevezzük.; Brown; Braun; Bond; Boyle;
+fizika; hőtan; Az ideális gáz belső energiája részecskék ... energiájának összege.; mozgási; helyzeti; hő; termikus;
+fizika; hőtan; Mennyi egy kétatomos molekula szabadsági fokainak száma?; 5; 6; 2; 3;
+fizika; hőtan; A szemüveg bepárásodik.; lecsapódás; fagyás; olvadás; párolgás;
+fizika; hőtan; A fagyi lecsorog a tölcséren.; olvadás; fagyás; párolgás; lecsapódás;
+fizika; hőtan; A mélyhűtőben a vízből jég lesz.; fagyás; olvadás; lecsapódás; párolgás;
+fizika; hőtan; A forró leves gőzölög.; párolgás; lecsapódás; olvadás; fagyás;
+fizika; hőtan; Melyik anyagok szilárd halmazállapotúak szobahőmérsékleten?; vas; olaj; tej; hidrogén;
+fizika; hőtan; Melyik anyagok folyékony halmazállapotúak szobahőmérsékleten?; higany; agyag; fa; alumínium;
+fizika; hőtan; Melyik anyagok légnemű halmazállapotúak szobahőmérsékleten?; hidrogén; ecetsav; sósav; olaj;
+fizika; hőtan; Melyik halmazállapot-változásra gondoltam? A forró, légnemű anyag újra folyékonnyá válik, ha egy hideg felülettel (pl. fedővel) érintkezik.; lecsapódás; párolgás; olvadás; forrás;
+fizika; hőtan; Melyik halmazállapot-változásra gondoltam? A folyékony anyag belsejében gőzbuborékok keletkeznek, amelyek a felszínre kerülnek, majd a légtérbe.; forrás; olvadás; párolgás; lecsapódás;
+fizika; hőtan; Melyik halmazállapot-változásra gondoltam? A folyékony anyagból szilárd anyag lesz.; fagyás; lecsapódás; forrás; párolgás;
+fizika; hőtan; Melyik halmazállapot-változásra gondoltam? A szilárd anyagból folyékony anyag lesz.; olvadás; párolgás; fagyás; lecsapódás;
+fizika; hőtan; Melyik halmazállapot-változásra gondoltam? A folyékony anyagból légnemű keletkezik. A részecskék a folyadék felszínéről lépnek a gáztérbe.; párolgás; olvadás; fagyás; forrás;
+fizika; elektromosság; Mi a feszültség jele?; U; V; I; R;
+fizika; elektromosság; Mi a feszültség mértékegysége?; V; A; F; U;
+fizika; elektromosság; Mi az áramerősség jele?; I; U; A; R;
+fizika; elektromosság; Mi az áramerősség mértékegysége?; A; I; W; V;
+fizika; elektromosság; Mi az ellenállás jele?; R; I; V; Ω;
+fizika; elektromosság; Mi az ellenállás mértékegysége?; Ω; V; A; R;
+fizika; elektromosság; Ohm törvénye melyik két mennyiség között állapít meg összefüggést?; feszültség, áramerősség; feszültség, ellenállás;  áramerősség, ellenállás; egyik sem;
+fizika; elektromosság; Ohm törvénye értelmében az adott fogyasztón mért feszültség és áramerősség:; egyenesen arányos; egyenlő; fordítottan arányos; párhuzamos;
+fizika; elektromosság; Mekkora az ellenállás, ha 20 V a feszültség és 10 A az áramerősség?; 2 Ω; 0,5 Ω; 20 Ω; 200 Ω;
+fizika; elektromosság; Mekkora a feszültség ha az ellenállás 20 Ω és 10 A az áramerősség?; 200 V; 2 V; 0,5 V; 20 V;
+fizika; elektromosság; Mekkora az áramerősség, ha 4Ω az ellenállás és a feszültség 24V?; 6 A; 96 A; 20 A; 0,16 A;
+fizika; elektromosság; Mi az idő jele?; t; Q; I; T;
+fizika; elektromosság; Mi a töltés jele?; Q; C; T; R;
+fizika; elektromosság; Mi a fogyasztó?; izzólámpa; párhuzamos kapcsolás; amper; elektroszkóp;
+fizika; elektromosság; Mi a feszültségmérő?; párhuzamos kapcsolás; amper; izzólámpa; elektroszkóp;
+fizika; csillagászat; Milyen messze van a Föld a Naptól?; 149,6 millió km; 227,94 millió km; 108 millió km; 98,54 millió km;
+fizika; csillagászat; Mennyi idő alatt kerüli meg teljesen a Mars a Napot?; 687 nap alatt; 225 nap alatt; 175 nap alatt; 57 nap alatt;
+fizika; csillagászat; Melyik csillagkép található a Göncölszekér formációján?; A Nagy Medve; A Kis Medve; A Vízöntő; Egyik sem;
+fizika; csillagászat; Milyen alakú a galaxis Tejútrendszer?; Spirál; Ovális; Szabálytalan; Elliptikus;
+fizika; csillagászat; A Naprendszer mely bolygójának vannak gyűrűi?; Szaturnusz; Vénusz; Neptunusz; Mars;
+fizika; csillagászat; A Naprendszer mely bolygójának van a legtöbb holdja?; Szaturnusz; Föld; Neptunusz; Jupiter;
+fizika; csillagászat; Ki volt az első a ki bebizonyította, hogy nem a Nap kering a Föld körül?; Galileo Galilei; Nikolausz Kopernikusz; Számoszi Arisztarkhosz; Egyikük sem;
+fizika; csillagászat; Milyen állatot küldtek először az űrbe?; gyümölcslegyeket; majmot; kutyát; macskát;
+fizika; csillagászat; Mennyi idő alatt ér el a Nap fénye a Földre?; 8min 20sec; kevesebb mint 1sec alatt; 18min  20sec; 6min;
+fizika; csillagászat; Melyik nem Föld típusú bolygó?; Jupiter; Vénusz; Merkúr; Föld;
+fizika; csillagászat; Mérések alapján mennyi évre tehetjük a világegyetem korát?; 13,7 milliárd év; 1 millió év; 8,3 milliárd év; 3,9 milliárd év;
+fizika; csillagászat; Melyik évben szálltak le a Holdra először az emberek?; 1969; 1956; 2002; 1989;
+fizika; csillagászat; Melyik évben állt pályára a Hubble-űrtávcső?; 1990; 2001; 1978; 1992;
+fizika; csillagászat; Milyen messze van a Földtől a Hold?; 384000 km; 567000 km; 100000 km; 345000 km;
+fizika; csillagászat; Mikor jutott ki az első szovjet ember a világűrbe?; 1961; 1983; 1999; 2001;

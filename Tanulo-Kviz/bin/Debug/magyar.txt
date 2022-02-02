@@ -17,7 +17,7 @@ irodalom; orosz irodalom; Hogyan hal meg a köpönyeg elrablása után Akakij Ak
 irodalom; Ady Endre költészete; Melyik irodalmi irányzathoz kötjük Ady költészetét?; klasszikus modernség; romatika; klasszicizmus; realizmus;
 irodalom; Ady Endre költészete; Hol született Ady?; Érmindszent; Érd; Érszentes; Szentes
 irodalom; Ady Endre költészete; Melyik kötete hozta meg számára a sikert?; Új versek; A halottak élén; Minden-Titkok versei; Szeretném, ha szeretnének
-irodalom; Ady Endre költészete; Kinek a feleségébe szeretett bele Ady? Diósy Ödön; Diószegi Ubul; Dióváry Benő; Diószegi Manó
+irodalom; Ady Endre költészete; Kinek a feleségébe szeretett bele Ady?; Diósy Ödön; Diószegi Ubul; Dióváry Benő; Diószegi Manó
 irodalom; Ady Endre költészete; Mi jellemző a Lédával való viszonyára?; folytonos harcok, csatározások, vad kibékülések; harmonikus, kiegyensúlyozott kapcsolat; udvarlás, házasság, gyerekek; hosszú udvarlás, Léda elvált és Ady felesége lett 
 irodalom; Ady Endre költészete; Ady születésének halálának dátumai:; 1877 - 1919; 1870 - 1920; 1877 - 1941; 1880 - 1930
 irodalom; Ady Endre költészete; Hol élt együtt Csinszkáva?; Csucsa; Chicago; Csikóstöttös; Csongrád

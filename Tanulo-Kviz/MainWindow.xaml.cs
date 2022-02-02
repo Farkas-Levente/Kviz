@@ -115,8 +115,10 @@ namespace Tanulo_Kviz
                 helyesValasz = splitek[3];
                 valasz2 = splitek[4];
                 valasz3 = splitek[5];
-                //valasz4 = splitek[6];   
+                
+                valasz4 = splitek[6];   
             }
+            
         }
 
         private void TargyBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -200,8 +202,16 @@ namespace Tanulo_Kviz
                 betoltottKerdesek.Add(tempKerdesek[randomIndex]);
                 tempKerdesek.RemoveAt(randomIndex);
             }
-            testLabel5.Content = betoltottKerdesek[0].kerdes;
-            testLabel6.Content = betoltottKerdesek[1].kerdes;
+            BetoltKerdes(betoltottKerdesek[0]);
+        }
+
+        private void BetoltKerdes(Kerdes ujKerdes)
+        {
+            kerdes.Content = ujKerdes.kerdes;
+            valasz1.Content = ujKerdes.helyesValasz;
+            valasz2.Content = ujKerdes.valasz2;
+            valasz3.Content = ujKerdes.valasz3;
+            valasz4.Content = ujKerdes.valasz4;
         }
     }
 }
