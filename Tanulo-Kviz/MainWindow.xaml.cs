@@ -27,6 +27,7 @@ namespace Tanulo_Kviz
         public List<Tantargy> targyak = new List<Tantargy>();
         Tantargy selectedTargy = null;
         Tema selectedTema = null;
+        public List<Kerdes> betoltottKerdesek = new List<Kerdes>();
         public MainWindow()
         {
 
@@ -82,7 +83,7 @@ namespace Tanulo_Kviz
 
         public class Tema
         {
-            List<Kerdes> kerdesek = new List<Kerdes>();
+            public List<Kerdes> kerdesek = new List<Kerdes>();
             public string nev;
             public Tema(string nev,string[] allomany)
             {
@@ -184,6 +185,23 @@ namespace Tanulo_Kviz
 
             tantargy.Content = selectedTargy.nev;
             temakor.Content = selectedTema.nev;
+            GeneralKerdesSor();
+        }
+
+
+        private void GeneralKerdesSor()
+        {
+            Random random = new Random();
+            List<Kerdes> osszesKerdes =  selectedTema.kerdesek;
+            List<Kerdes> tempKerdesek =  selectedTema.kerdesek;
+            for (int i = 0; i < 10; i++)
+            {
+                int randomIndex = random.Next(0, tempKerdesek.Count);
+                betoltottKerdesek.Add(tempKerdesek[randomIndex]);
+                tempKerdesek.RemoveAt(randomIndex);
+            }
+            testLabel5.Content = betoltottKerdesek[0].kerdes;
+            testLabel6.Content = betoltottKerdesek[1].kerdes;
         }
     }
 }
