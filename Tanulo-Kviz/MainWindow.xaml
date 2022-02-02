@@ -39,7 +39,7 @@
             <Viewbox Height="36" Margin="-6,297,6,86">
                 <RadioButton x:Name="valasz4" Content="Válasz 4" Width="326"></RadioButton>
             </Viewbox>
-            <Label Content="1/10" HorizontalContentAlignment="Center" Margin="349,349,343,0" VerticalAlignment="Top" Width="100" FontSize="16"/>
+            <Label x:Name="oladalJelzo" Content="1/10" HorizontalContentAlignment="Center" Margin="349,349,343,0" VerticalAlignment="Top" Width="100" FontSize="16"/>
             <Button Name="vissza" Content="Vissza" HorizontalAlignment="Left" Margin="4,384,0,0" VerticalAlignment="Top" Width="80" Height="30" Click="elozoLap_Betolt"/>
             <Button Name="kovetkezo" Content="Következő" HorizontalAlignment="Left" Margin="719,384,-7,0" VerticalAlignment="Top" Width="80" Height="30" Click="Kovetkezo_Oldal"/>
             <Button Name="oldal_1" Content="" HorizontalAlignment="Left" Margin="89,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>

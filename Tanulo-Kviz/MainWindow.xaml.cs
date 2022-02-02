@@ -253,6 +253,7 @@ namespace Tanulo_Kviz
             //ujKerdes.valaszok = removeoltak;
             kerdes.Content = ujKerdes.kerdes;
             oldalIndex = betoltottKerdesek.IndexOf(ujKerdes);
+            oladalJelzo.Content = $"{oldalIndex+1}/10";
             
         }
 
