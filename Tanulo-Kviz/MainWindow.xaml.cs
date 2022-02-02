@@ -22,7 +22,7 @@ namespace Tanulo_Kviz
 
     public partial class MainWindow : Window
     {
-
+        List<RadioButton> buttons = new List<RadioButton>();
         public Dictionary<string, Tantargy> tantargyNyilvantarto = new Dictionary<string, Tantargy>();
         public List<Tantargy> targyak = new List<Tantargy>();
         Tantargy selectedTargy = null;
@@ -33,7 +33,10 @@ namespace Tanulo_Kviz
 
             InitializeComponent();
 
-            
+            buttons.Add(valasz1);
+            buttons.Add(valasz2);
+            buttons.Add(valasz3);
+            buttons.Add(valasz4);
 
             temakorBox.IsEnabled = false;
 
@@ -108,6 +111,7 @@ namespace Tanulo_Kviz
             public string valasz3;
             public string valasz4;
 
+            public List<string> valaszok = new List<string>();
             public Kerdes(string sor)
             {
                 string[] splitek = sor.Split(';');
@@ -116,7 +120,12 @@ namespace Tanulo_Kviz
                 valasz2 = splitek[4];
                 valasz3 = splitek[5];
                 
-                valasz4 = splitek[6];   
+                valasz4 = splitek[6];
+                valaszok.Add(helyesValasz);
+                valaszok.Add(valasz2);
+                valaszok.Add(valasz3);
+                valaszok.Add(valasz4);
+
             }
             
         }
@@ -207,11 +216,27 @@ namespace Tanulo_Kviz
 
         private void BetoltKerdes(Kerdes ujKerdes)
         {
+            Random random = new Random();
+            List<string> tempValasz = new List<string>();
+            tempValasz = ujKerdes.valaszok;
+            List<RadioButton> tempButton = new List<RadioButton>();
+            tempButton = buttons;
+
+            for (int i = 0; i < 4; i++)
+            {
+                
+                int randomIndex = random.Next(0, tempValasz.Count);
+                int randomButtonIndex = random.Next(0, tempButton.Count);
+                tempButton[randomButtonIndex].Content = tempValasz[randomIndex];
+                tempValasz.RemoveAt(randomIndex);
+                tempButton.RemoveAt(randomButtonIndex);
+            }
+
             kerdes.Content = ujKerdes.kerdes;
-            valasz1.Content = ujKerdes.helyesValasz;
-            valasz2.Content = ujKerdes.valasz2;
-            valasz3.Content = ujKerdes.valasz3;
-            valasz4.Content = ujKerdes.valasz4;
+            //valasz1.Content = ujKerdes.helyesValasz;
+            //valasz2.Content = ujKerdes.valasz2;
+            //valasz3.Content = ujKerdes.valasz3;
+            //valasz4.Content = ujKerdes.valasz4;
         }
     }
 }
