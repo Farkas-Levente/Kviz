@@ -41,7 +41,7 @@
             </Viewbox>
             <Label Content="1/10" HorizontalContentAlignment="Center" Margin="349,349,343,0" VerticalAlignment="Top" Width="100" FontSize="16"/>
             <Button Name="vissza" Content="Vissza" HorizontalAlignment="Left" Margin="4,384,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
-            <Button Name="kovetkezo" Content="Következő" HorizontalAlignment="Left" Margin="719,384,-7,0" VerticalAlignment="Top" Width="80" Height="30"/>
+            <Button Name="kovetkezo" Content="Következő" HorizontalAlignment="Left" Margin="719,384,-7,0" VerticalAlignment="Top" Width="80" Height="30" Click="Kovetkezo_Oldal"/>
             <Button Name="oldal_1" Content="" HorizontalAlignment="Left" Margin="89,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>
             <Button Name="oldal_2" Content="" HorizontalAlignment="Left" Margin="152,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>
             <Button Name="oldal_10" Content="" HorizontalAlignment="Left" Margin="656,389,0,0" VerticalAlignment="Top" Width="58" Height="20"/>

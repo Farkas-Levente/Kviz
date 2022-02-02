@@ -28,6 +28,7 @@ namespace Tanulo_Kviz
         Tantargy selectedTargy = null;
         Tema selectedTema = null;
         public List<Kerdes> betoltottKerdesek = new List<Kerdes>();
+        int oldalIndex = 0;
         public MainWindow()
         {
 
@@ -212,6 +213,7 @@ namespace Tanulo_Kviz
                 tempKerdesek.RemoveAt(randomIndex);
             }
             BetoltKerdes(betoltottKerdesek[0]);
+            oldalIndex = 0;
         }
 
         private void BetoltKerdes(Kerdes ujKerdes)
@@ -224,19 +226,23 @@ namespace Tanulo_Kviz
 
             for (int i = 0; i < 4; i++)
             {
-                
+               
                 int randomIndex = random.Next(0, tempValasz.Count);
-                int randomButtonIndex = random.Next(0, tempButton.Count);
-                tempButton[randomButtonIndex].Content = tempValasz[randomIndex];
+               
+                buttons[i].Content = tempValasz[randomIndex];
                 tempValasz.RemoveAt(randomIndex);
-                tempButton.RemoveAt(randomButtonIndex);
+               
             }
 
             kerdes.Content = ujKerdes.kerdes;
-            //valasz1.Content = ujKerdes.helyesValasz;
-            //valasz2.Content = ujKerdes.valasz2;
-            //valasz3.Content = ujKerdes.valasz3;
-            //valasz4.Content = ujKerdes.valasz4;
+            oldalIndex = betoltottKerdesek.IndexOf(ujKerdes);
+            
+        }
+
+        private void Kovetkezo_Oldal(object sender, RoutedEventArgs e)
+        {
+            if (oldalIndex + 1 >= betoltottKerdesek.Count) return;
+            BetoltKerdes(betoltottKerdesek[oldalIndex +1]);
         }
     }
 }
