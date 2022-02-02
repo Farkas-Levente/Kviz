@@ -54,6 +54,10 @@ namespace Tanulo_Kviz
             tantargyNyilvantarto.Add(informatika.nev, informatika);
             targyBox.Items.Add(informatika.nev);
 
+            Tantargy matematika = new Tantargy("matematika.txt");
+            tantargyNyilvantarto.Add(matematika.nev, matematika);
+            targyBox.Items.Add(matematika.nev);
+
         }
 
         public class Tantargy
