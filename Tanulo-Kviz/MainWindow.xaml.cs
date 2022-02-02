@@ -228,25 +228,29 @@ namespace Tanulo_Kviz
         {
             Random random = new Random();
             List<string> tempValasz = new List<string>();
-            
-            tempValasz = ujKerdes.valaszok;
+
+            //tempValasz = ujKerdes.valaszok;
+            foreach (var item in ujKerdes.valaszok)
+            {
+                tempValasz.Add(item);
+            }
             List<RadioButton> tempButton = new List<RadioButton>();
             tempButton = buttons;
 
-            List<string> removeoltak = new List<string>();
+            //List<string> removeoltak = new List<string>();
             for (int i = 0; i < 4; i++)
             {
                
                 int randomIndex = random.Next(0, tempValasz.Count);
                
                 buttons[i].Content = tempValasz[randomIndex];
-                string removeoltValasz = tempValasz[randomIndex];
-                removeoltak.Add(removeoltValasz);
+                //string removeoltValasz = tempValasz[randomIndex];
+                //removeoltak.Add(removeoltValasz);
                 tempValasz.RemoveAt(randomIndex);
                 
                
             }
-            ujKerdes.valaszok = removeoltak;
+            //ujKerdes.valaszok = removeoltak;
             kerdes.Content = ujKerdes.kerdes;
             oldalIndex = betoltottKerdesek.IndexOf(ujKerdes);
             
