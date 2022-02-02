@@ -116,6 +116,11 @@ namespace Tanulo_Kviz
             public string valasz3;
             public string valasz4;
 
+            public string valasztott = null;
+            public bool isRandomized = false;
+
+            public List<string> sorrend = new List<string>();
+
             public List<string> valaszok = new List<string>();
             public Kerdes(string sor)
             {
@@ -238,18 +243,32 @@ namespace Tanulo_Kviz
             tempButton = buttons;
 
             //List<string> removeoltak = new List<string>();
-            for (int i = 0; i < 4; i++)
+            if(ujKerdes.isRandomized == false)
             {
-               
-                int randomIndex = random.Next(0, tempValasz.Count);
-               
-                buttons[i].Content = tempValasz[randomIndex];
-                //string removeoltValasz = tempValasz[randomIndex];
-                //removeoltak.Add(removeoltValasz);
-                tempValasz.RemoveAt(randomIndex);
-                
-               
+                for (int i = 0; i < 4; i++)
+                {
+
+                    int randomIndex = random.Next(0, tempValasz.Count);
+
+                    buttons[i].Content = tempValasz[randomIndex];
+                    //string removeoltValasz = tempValasz[randomIndex];
+                    //removeoltak.Add(removeoltValasz);
+                    ujKerdes.sorrend.Add(tempValasz[randomIndex]);
+                    tempValasz.RemoveAt(randomIndex);
+                    
+
+
+                }
             }
+            else
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    buttons[i].Content = ujKerdes.sorrend[i];
+                }
+            }
+            
+            ujKerdes.isRandomized = true;
             //ujKerdes.valaszok = removeoltak;
             kerdes.Content = ujKerdes.kerdes;
             oldalIndex = betoltottKerdesek.IndexOf(ujKerdes);
@@ -270,6 +289,28 @@ namespace Tanulo_Kviz
             if (oldalIndex <= 0) return;
            // betoltottKerdesek[oldalIndex - 1].FeltöltValaszok();
             BetoltKerdes(betoltottKerdesek[oldalIndex - 1]);
+        }
+
+       
+
+        private void Valasz1_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Valasz2_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Valasz3_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Valasz4_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
