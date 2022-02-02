@@ -244,5 +244,11 @@ namespace Tanulo_Kviz
             if (oldalIndex + 1 >= betoltottKerdesek.Count) return;
             BetoltKerdes(betoltottKerdesek[oldalIndex +1]);
         }
+
+        private void elozoLap_Betolt(object sender, RoutedEventArgs e)
+        {
+            if (oldalIndex <= 0) return;
+            BetoltKerdes(betoltottKerdesek[oldalIndex - 1]);
+        }
     }
 }
