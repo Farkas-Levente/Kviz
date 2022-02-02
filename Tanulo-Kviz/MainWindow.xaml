@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Tanulás ellenőrző kvíz" Height="480" Width="850">
     <Grid>
-        <Grid Name="foLap" Visibility="Visible">
+        <Grid Name="foLap" Visibility="Hidden">
             <Label Content="Válaszd ki a kvíz témáját:" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" FontSize="16"/>
             <Label Content="Tantárgy:" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" FontSize="16"/>
             <ComboBox Name="targyBox" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="TargyBox_SelectionChanged">
@@ -23,21 +23,21 @@
         </Grid>
         <!--Kviz-->
 
-        <Grid Name="kvizLap" Visibility="Hidden" Margin="22,4,-22,-4">
+        <Grid Name="kvizLap" Visibility="Visible" Margin="22,4,-22,-4">
             <Label Name="tantargy" Content="Tantárgy" Margin="167,0,227,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="20"/>
             <Label Name="temakor" Content="Téma" Margin="140,24,207,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="20" RenderTransformOrigin="0.5,0.5"/>
             <Label Name="kerdes" Content="Kérdés" Margin="-23,61,43,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="24" Height="73"/>
             <Viewbox Height="36" Margin="-6,162,6,221">
-                <RadioButton x:Name="valasz1" Content="Válasz 1" Width="326"></RadioButton>
+                <RadioButton GroupName="Valasz" x:Name="valasz1" Content="Válasz 1" Width="326"></RadioButton>
             </Viewbox>
             <Viewbox Height="36" Margin="-6,207,6,176">
-                <RadioButton x:Name="valasz2" Content="Válasz 2" Width="326"></RadioButton>
+                <RadioButton  GroupName="Valasz" x:Name="valasz2" Content="Válasz 2" Width="326"></RadioButton>
             </Viewbox>
             <Viewbox Height="36" Margin="-6,252,6,131">
-                <RadioButton x:Name="valasz3" Content="Válasz 3" Width="326"></RadioButton>
+                <RadioButton GroupName="Valasz" x:Name="valasz3" Content="Válasz 3" Width="326"></RadioButton>
             </Viewbox>
             <Viewbox Height="36" Margin="-6,297,6,86">
-                <RadioButton x:Name="valasz4" Content="Válasz 4" Width="326"></RadioButton>
+                <RadioButton GroupName="Valasz" x:Name="valasz4" Content="Válasz 4" Width="326"></RadioButton>
             </Viewbox>
             <Label x:Name="oladalJelzo" Content="1/10" HorizontalContentAlignment="Center" Margin="349,349,343,0" VerticalAlignment="Top" Width="100" FontSize="16"/>
             <Button Name="vissza" Content="Vissza" HorizontalAlignment="Left" Margin="4,384,0,0" VerticalAlignment="Top" Width="80" Height="30" Click="elozoLap_Betolt"/>
