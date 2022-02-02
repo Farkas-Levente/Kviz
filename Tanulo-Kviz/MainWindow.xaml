@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tanulo_Kviz"
         mc:Ignorable="d"
-        Title="Tanulás ellenőrző kvíz" Height="480" Width="820">
+        Title="Tanulás ellenőrző kvíz" Height="480" Width="850">
     <Grid>
         <Grid Name="foLap" Visibility="Visible">
             <Label Content="Válaszd ki a kvíz témáját:" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" FontSize="16"/>
@@ -23,10 +23,10 @@
         </Grid>
         <!--Kviz-->
 
-        <Grid Name="kvizLap" Visibility="Hidden">
-            <Label Name="tantargy" Content="Tantárgy" Margin="215,1,179,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="20"/>
-            <Label Name="temakor" Content="Téma" Margin="186,24,161,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="20" RenderTransformOrigin="0.5,0.5"/>
-            <Label Name="kerdes" Content="Kérdés" Margin="10,59,10,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="24" Height="73"/>
+        <Grid Name="kvizLap" Visibility="Hidden" Margin="22,4,-22,-4">
+            <Label Name="tantargy" Content="Tantárgy" Margin="167,0,227,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="20"/>
+            <Label Name="temakor" Content="Téma" Margin="140,24,207,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="20" RenderTransformOrigin="0.5,0.5"/>
+            <Label Name="kerdes" Content="Kérdés" Margin="-23,61,43,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="24" Height="73"/>
             <Viewbox Height="36" Margin="-6,162,6,221">
                 <RadioButton x:Name="valasz1" Content="Válasz 1" Width="326"></RadioButton>
             </Viewbox>
