@@ -358,74 +358,21 @@ namespace Tanulo_Kviz
         private void Valasz1_Checked(object sender, RoutedEventArgs e)
         {
             currentKerdes.valasztott = valasz1.Content.ToString();
-            testLabel5.Content = currentKerdes.valasztott;
-            if(currentKerdes.helyesValasz == currentKerdes.valasztott)
-            {
-                testLabel6.Content = "helyes";
-            }
-            else
-            {
-                testLabel6.Content = "nem helyes";
-            }
-            if(betoltottKerdesek[0].valasztott != null)
-            testLabel7.Content = betoltottKerdesek[0].valasztott;
-            if (betoltottKerdesek[1].valasztott != null)
-                testLabel8.Content = betoltottKerdesek[1].valasztott;
         }
 
         private void Valasz2_Checked(object sender, RoutedEventArgs e)
         {
             currentKerdes.valasztott = valasz2.Content.ToString();
-            
-            testLabel5.Content = currentKerdes.valasztott;
-            if (currentKerdes.helyesValasz == currentKerdes.valasztott)
-            {
-                testLabel6.Content = "helyes";
-            }
-            else
-            {
-                testLabel6.Content = "nem helyes";
-            }
-            if (betoltottKerdesek[0].valasztott != null)
-                testLabel7.Content = betoltottKerdesek[0].valasztott;
-            if (betoltottKerdesek[1].valasztott != null)
-                testLabel8.Content = betoltottKerdesek[1].valasztott;
         }
 
         private void Valasz3_Checked(object sender, RoutedEventArgs e)
         {
             currentKerdes.valasztott = valasz3.Content.ToString();
-            testLabel5.Content = currentKerdes.valasztott;
-            if (currentKerdes.helyesValasz == currentKerdes.valasztott)
-            {
-                testLabel6.Content = "helyes";
-            }
-            else
-            {
-                testLabel6.Content = "nem helyes";
-            }
-            if (betoltottKerdesek[0].valasztott != null)
-                testLabel7.Content = betoltottKerdesek[0].valasztott;
-            if (betoltottKerdesek[1].valasztott != null)
-                testLabel8.Content = betoltottKerdesek[1].valasztott;
         }
 
         private void Valasz4_Checked(object sender, RoutedEventArgs e)
         {
             currentKerdes.valasztott = valasz4.Content.ToString();
-            testLabel5.Content = currentKerdes.valasztott;
-            if (currentKerdes.helyesValasz == currentKerdes.valasztott)
-            {
-                testLabel6.Content = "helyes";
-            }
-            else
-            {
-                testLabel6.Content = "nem helyes";
-            }
-            if (betoltottKerdesek[0].valasztott != null)
-                testLabel7.Content = betoltottKerdesek[0].valasztott;
-            if (betoltottKerdesek[1].valasztott != null)
-                testLabel8.Content = betoltottKerdesek[1].valasztott;
         }
 
         private void oldal_1_Click(object sender, RoutedEventArgs e)
