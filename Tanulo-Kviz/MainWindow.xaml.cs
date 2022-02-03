@@ -279,7 +279,11 @@ namespace Tanulo_Kviz
         private void Kovetkezo_Oldal(object sender, RoutedEventArgs e)
         {
             if (oldalIndex + 1 >= betoltottKerdesek.Count) return;
-           // betoltottKerdesek[oldalIndex +1].FeltöltValaszok();
+            // betoltottKerdesek[oldalIndex +1].FeltöltValaszok();
+            valasz1.IsChecked = false;
+            valasz2.IsChecked = false;
+            valasz3.IsChecked = false;
+            valasz4.IsChecked = false;
             BetoltKerdes(betoltottKerdesek[oldalIndex +1]);
           
         }
