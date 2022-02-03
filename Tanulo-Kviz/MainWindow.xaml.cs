@@ -268,7 +268,14 @@ namespace Tanulo_Kviz
                     buttons[i].Content = ujKerdes.sorrend[i];
                 }
             }
-            
+            foreach (RadioButton but in buttons)
+            {
+                if(but.Content.ToString() == ujKerdes.valasztott && ujKerdes.valasztott != null)
+                {
+                    but.IsChecked = true;
+                }
+            }
+
             ujKerdes.isRandomized = true;
             //ujKerdes.valaszok = removeoltak;
             kerdes.Content = ujKerdes.kerdes;
@@ -319,6 +326,7 @@ namespace Tanulo_Kviz
         private void Valasz2_Checked(object sender, RoutedEventArgs e)
         {
             currentKerdes.valasztott = valasz2.Content.ToString();
+            
             testLabel5.Content = currentKerdes.valasztott;
             if (currentKerdes.helyesValasz == currentKerdes.valasztott)
             {
