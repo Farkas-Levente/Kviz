@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Tanulás ellenőrző kvíz" Height="1000" Width="1800">
     <Grid>
-        <Grid Name="foLap" Visibility="Hidden">
+        <Grid Name="foLap" Visibility="Visible">
             <Image HorizontalAlignment="Left" Height="917" VerticalAlignment="Top" Width="1643" Source="quiz_kep.png" Margin="79,67,0,-15" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>
                     <TransformGroup>
@@ -29,7 +29,7 @@
         </Grid>
         <!--Kviz-->
 
-        <Grid Name="kvizLap" Visibility="Visible" Margin="22,4,-22,-4">
+        <Grid Name="kvizLap" Visibility="Hidden" Margin="22,4,-22,-4">
             <Label Name="tantargy" Content="Tantárgy" Margin="180,47,214,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="36" FontWeight="Bold"/>
             <Label Name="temakor" Content="Téma" Margin="154,110,194,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="36" RenderTransformOrigin="0.5,0.5" FontStyle="Italic"/>
             <Label Name="kerdes" Content="Kérdés" Margin="-6,251,26,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="24" Height="84"/>
