@@ -30,6 +30,9 @@ namespace Tanulo_Kviz
         public List<Kerdes> betoltottKerdesek = new List<Kerdes>();
         int oldalIndex = 0;
         Kerdes currentKerdes = null;
+
+        List<Button> oldalValtoGombok = new List<Button>();
+
         public MainWindow()
         {
 
@@ -445,6 +448,20 @@ namespace Tanulo_Kviz
         {
             Nullazas();
             BetoltKerdes(betoltottKerdesek[2]);
+        }
+
+        private void kiertekeles(object sender, RoutedEventArgs e)
+        {
+            int helyesValaszok = 0;
+            foreach (Kerdes kerdes in betoltottKerdesek)
+            {
+                if(kerdes.valasztott == kerdes.helyesValasz)
+                {
+                    helyesValaszok++;
+                }
+            }
+
+            MessageBox.Show($"{helyesValaszok}/10 pontod lett.");
         }
     }
 }
