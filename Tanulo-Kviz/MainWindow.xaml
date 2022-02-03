@@ -45,27 +45,10 @@
             <Viewbox Height="36" Margin="-6,297,6,86">
                 <RadioButton GroupName="Valasz" x:Name="valasz4" Content="Válasz 4" Width="745" Checked="Valasz4_Checked"></RadioButton>
             </Viewbox>
-<<<<<<< Updated upstream
-            <Label x:Name="oladalJelzo" Content="1/10" HorizontalContentAlignment="Center" Margin="349,349,343,0" VerticalAlignment="Top" Width="100" FontSize="16"/>
-            <Button Name="vissza" Content="Vissza" HorizontalAlignment="Left" Margin="4,384,0,0" VerticalAlignment="Top" Width="80" Height="30" Click="elozoLap_Betolt"/>
-            <Button Name="kovetkezo" Content="Következő" HorizontalAlignment="Left" Margin="719,384,-7,0" VerticalAlignment="Top" Width="80" Height="30" Click="Kovetkezo_Oldal"/>
-            <Button Name="oldal_1" Content="" HorizontalAlignment="Left" Margin="89,389,0,0" VerticalAlignment="Top" Width="58" Height="20" Click="oldal_1_Click"/>
-            <Button Name="oldal_2" Content="" HorizontalAlignment="Left" Margin="152,389,0,0" VerticalAlignment="Top" Width="58" Height="20" Click="oldal_2_Click"/>
-            <Button Name="oldal_10" Content="" HorizontalAlignment="Left" Margin="656,389,0,0" VerticalAlignment="Top" Width="58" Height="20" Click="oldal_10_Click"/>
-            <Button Name="oldal_9" Content="" HorizontalAlignment="Left" Margin="593,389,0,0" VerticalAlignment="Top" Width="58" Height="20" Click="oldal_9_Click"/>
-            <Button Name="oldal_8" Content="" HorizontalAlignment="Left" Margin="530,389,0,0" VerticalAlignment="Top" Width="58" Height="20" Click="oldal_8_Click"/>
-            <Button Name="oldal_7" Content="" HorizontalAlignment="Left" Margin="467,389,0,0" VerticalAlignment="Top" Width="58" Height="20" Click="oldal_7_Click"/>
-            <Button Name="oldal_6" Content="" HorizontalAlignment="Left" Margin="404,389,0,0" VerticalAlignment="Top" Width="58" Height="20" Click="oldal_6_Click"/>
-            <Button Name="oldal_5" Content="" HorizontalAlignment="Left" Margin="341,389,0,0" VerticalAlignment="Top" Width="58" Height="20" Click="oldal_5_Click"/>
-            <Button Name="oldal_4" Content="" HorizontalAlignment="Left" Margin="278,389,0,0" VerticalAlignment="Top" Width="58" Height="20" Click="oldal_4_Click"/>
-            <Button Name="oldal_3" Content="" HorizontalAlignment="Left" Margin="215,389,0,0" VerticalAlignment="Top" Width="58" Height="20" Click="oldal_3_Click"/>
-            <Label Name="testLabel5" Content="testLabel" HorizontalAlignment="Left" Margin="492,156,0,0" VerticalAlignment="Top" Width="133"/>
-            <Label x:Name="testLabel6" Content="testLabel" HorizontalAlignment="Left" Margin="494,187,0,0" VerticalAlignment="Top" Width="131"/>
-            <Label x:Name="testLabel7" Content="testLabel" HorizontalAlignment="Left" Margin="490,218,0,0" VerticalAlignment="Top" Width="133"/>
-            <Label x:Name="testLabel8" Content="testLabel" HorizontalAlignment="Left" Margin="492,249,0,0" VerticalAlignment="Top" Width="131"/>
-            <Button x:Name="kiertekelesGomb" Content="Végkiértékelés" HorizontalAlignment="Left" Margin="719,356,0,0" VerticalAlignment="Top" Width="80" Click="kiertekeles"/>
+            
+           
             <Button x:Name="kilepes" Content="Kilépés" HorizontalAlignment="Left" Margin="719,356,0,0" VerticalAlignment="Top" Width="80" Visibility="Hidden" Click="kilep"/>
-=======
+
             <Label x:Name="oladalJelzo" Content="1/10" HorizontalContentAlignment="Center" Margin="786,773,910,0" VerticalAlignment="Top" FontSize="24" Height="50"/>
             <Button Name="vissza" Content="Vissza" HorizontalAlignment="Left" Margin="10,848,0,0" VerticalAlignment="Top" Width="176" Height="76" Click="elozoLap_Betolt" FontSize="24"/>
             <Button Name="kovetkezo" Content="Következő" HorizontalAlignment="Left" Margin="1542,848,0,0" VerticalAlignment="Top" Width="176" Height="78" Click="Kovetkezo_Oldal" FontSize="24" RenderTransformOrigin="0.295,1.396"/>
@@ -81,7 +64,7 @@
             <Button Name="oldal_3" Content="" HorizontalAlignment="Left" Margin="500,870,0,0" VerticalAlignment="Top" Width="96" Height="34" Click="oldal_3_Click"/>
             <Button x:Name="kiertekelesGomb" Content="Végkiértékelés" HorizontalAlignment="Left" Margin="1542,754,0,0" VerticalAlignment="Top" Width="170" Click="kiertekeles" Height="50" FontSize="24"/>
 
->>>>>>> Stashed changes
+
 
         </Grid>
     </Grid>

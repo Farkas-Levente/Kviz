@@ -471,7 +471,7 @@ namespace Tanulo_Kviz
             }
 
             MessageBox.Show($"{helyesValaszok}/10 pontod lett.");
-
+            
             kilepes.Visibility = Visibility.Visible;
         }
 
@@ -486,6 +486,9 @@ namespace Tanulo_Kviz
             foLap.Visibility = Visibility.Visible;
 
             kilepes.Visibility = Visibility.Hidden;
+            selectedTema = null;
+            selectedTargy = null;
+           
 
         }
     }
