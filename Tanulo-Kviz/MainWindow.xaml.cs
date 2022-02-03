@@ -16,9 +16,6 @@ using System.Windows.Shapes;
 
 namespace Tanulo_Kviz
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
 
     public partial class MainWindow : Window
     {
@@ -76,6 +73,10 @@ namespace Tanulo_Kviz
             Tantargy physics = new Tantargy("physics.txt");
             tantargyNyilvantarto.Add(physics.nev, physics);
             targyBox.Items.Add(physics.nev);
+
+            Tantargy tori = new Tantargy("torike.txt");
+            tantargyNyilvantarto.Add(tori.nev, tori);
+            targyBox.Items.Add(tori.nev);
 
         }
 
@@ -136,7 +137,6 @@ namespace Tanulo_Kviz
             public string valasz4;
 
             public string valasztott = null;
-            public bool isRandomized = false;
 
             public List<string> sorrend = new List<string>();
 
@@ -219,8 +219,6 @@ namespace Tanulo_Kviz
                 MessageBox.Show("Kérem válasszon tantárgyat!");
                 return;
             }
-            //testLabel3.Content = selectedTargy.nev;
-            //testlabel4.Content = selectedTema.nev;
 
             kvizLap.Visibility = Visibility.Visible;
             foLap.Visibility = Visibility.Hidden;
@@ -265,7 +263,6 @@ namespace Tanulo_Kviz
             Random random = new Random();
             List<string> tempValasz = new List<string>();
             currentKerdes = ujKerdes;
-            //tempValasz = ujKerdes.valaszok;
             foreach (var item in ujKerdes.valaszok)
             {
                 tempValasz.Add(item);
@@ -273,8 +270,7 @@ namespace Tanulo_Kviz
             List<RadioButton> tempButton = new List<RadioButton>();
             tempButton = buttons;
 
-            //List<string> removeoltak = new List<string>();
-            if(ujKerdes.isRandomized == false)
+            if(ujKerdes.sorrend.Count <= 0)
             {
                 for (int i = 0; i < 4; i++)
                 {
@@ -282,8 +278,6 @@ namespace Tanulo_Kviz
                     int randomIndex = random.Next(0, tempValasz.Count);
 
                     buttons[i].Content = tempValasz[randomIndex];
-                    //string removeoltValasz = tempValasz[randomIndex];
-                    //removeoltak.Add(removeoltValasz);
                     ujKerdes.sorrend.Add(tempValasz[randomIndex]);
                     tempValasz.RemoveAt(randomIndex);
                     
@@ -306,8 +300,6 @@ namespace Tanulo_Kviz
                 }
             }
 
-            ujKerdes.isRandomized = true;
-            //ujKerdes.valaszok = removeoltak;
             kerdes.Content = ujKerdes.kerdes;
             oldalIndex = betoltottKerdesek.IndexOf(ujKerdes);
             oladalJelzo.Content = $"{oldalIndex+1}/10";
@@ -340,7 +332,6 @@ namespace Tanulo_Kviz
         private void Kovetkezo_Oldal(object sender, RoutedEventArgs e)
         {
             if (oldalIndex + 1 >= betoltottKerdesek.Count) return;
-            // betoltottKerdesek[oldalIndex +1].FeltöltValaszok();
             Nullazas();
             BetoltKerdes(betoltottKerdesek[oldalIndex +1]);
           
@@ -349,7 +340,6 @@ namespace Tanulo_Kviz
         private void elozoLap_Betolt(object sender, RoutedEventArgs e)
         {
             if (oldalIndex <= 0) return;
-           // betoltottKerdesek[oldalIndex - 1].FeltöltValaszok();
             BetoltKerdes(betoltottKerdesek[oldalIndex - 1]);
         }
 
