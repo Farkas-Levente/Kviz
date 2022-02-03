@@ -38,6 +38,17 @@ namespace Tanulo_Kviz
 
             InitializeComponent();
 
+            oldalValtoGombok.Add(oldal_1);
+            oldalValtoGombok.Add(oldal_2);
+            oldalValtoGombok.Add(oldal_3);
+            oldalValtoGombok.Add(oldal_4);
+            oldalValtoGombok.Add(oldal_5);
+            oldalValtoGombok.Add(oldal_6);
+            oldalValtoGombok.Add(oldal_7);
+            oldalValtoGombok.Add(oldal_8);
+            oldalValtoGombok.Add(oldal_9);
+            oldalValtoGombok.Add(oldal_10);
+
             buttons.Add(valasz1);
             buttons.Add(valasz2);
             buttons.Add(valasz3);
@@ -288,7 +299,11 @@ namespace Tanulo_Kviz
             kerdes.Content = ujKerdes.kerdes;
             oldalIndex = betoltottKerdesek.IndexOf(ujKerdes);
             oladalJelzo.Content = $"{oldalIndex+1}/10";
-            
+            foreach(Button button in oldalValtoGombok)
+            {
+                button.Background = Brushes.White;
+            }
+            oldalValtoGombok[oldalIndex].Background = Brushes.Aqua;
         }
 
         private void Kovetkezo_Oldal(object sender, RoutedEventArgs e)
