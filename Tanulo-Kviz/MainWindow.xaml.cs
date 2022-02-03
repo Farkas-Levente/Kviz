@@ -317,6 +317,7 @@ namespace Tanulo_Kviz
                     {
                         button.Foreground = Brushes.Red;
                     }
+                    button.IsEnabled = false;
 
 
                 }
@@ -497,6 +498,7 @@ namespace Tanulo_Kviz
                 {
                     button.Foreground = Brushes.Red;
                 }
+                button.IsEnabled = false;
                 
             }
             
