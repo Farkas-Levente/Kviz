@@ -137,7 +137,6 @@ namespace Tanulo_Kviz
             public string valasz4;
 
             public string valasztott = null;
-            public bool isRandomized = false;
 
             public List<string> sorrend = new List<string>();
 
@@ -271,7 +270,7 @@ namespace Tanulo_Kviz
             List<RadioButton> tempButton = new List<RadioButton>();
             tempButton = buttons;
 
-            if(ujKerdes.isRandomized == false)
+            if(ujKerdes.sorrend.Count <= 0)
             {
                 for (int i = 0; i < 4; i++)
                 {
@@ -301,7 +300,6 @@ namespace Tanulo_Kviz
                 }
             }
 
-            ujKerdes.isRandomized = true;
             kerdes.Content = ujKerdes.kerdes;
             oldalIndex = betoltottKerdesek.IndexOf(ujKerdes);
             oladalJelzo.Content = $"{oldalIndex+1}/10";
