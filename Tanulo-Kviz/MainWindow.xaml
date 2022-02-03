@@ -6,6 +6,14 @@
         xmlns:local="clr-namespace:Tanulo_Kviz"
         mc:Ignorable="d"
         Title="Tanulás ellenőrző kvíz" Height="1000" Width="1800">
+    <Window.Resources>
+        <ControlTemplate x:Key="Button" TargetType="RadioButton">
+            <Grid>
+                <Rectangle Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}"/>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </ControlTemplate>
+    </Window.Resources>
     <Grid>
         <Grid Name="foLap" Visibility="Visible">
             <Image HorizontalAlignment="Left" Height="917" VerticalAlignment="Top" Width="1643" Source="quiz_kep.png" Margin="79,67,0,-15" RenderTransformOrigin="0.5,0.5">
@@ -34,20 +42,17 @@
             <Label Name="temakor" Content="Téma" Margin="154,110,194,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="36" RenderTransformOrigin="0.5,0.5" FontStyle="Italic"/>
             <Label Name="kerdes" Content="Kérdés" Margin="-6,251,26,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="24" Height="84"/>
             <Viewbox Height="36" Margin="-6,162,6,221">
-                <RadioButton GroupName="Valasz" x:Name="valasz1" Content="Válasz 1" Width="746" Checked="Valasz1_Checked"></RadioButton>
+                <RadioButton Template="{StaticResource Button }" HorizontalContentAlignment="Center" GroupName="Valasz" x:Name="valasz1" Content="Válasz 1" Width="746" Checked="Valasz1_Checked"></RadioButton>
             </Viewbox>
             <Viewbox Height="36" Margin="-6,207,6,176">
-                <RadioButton  GroupName="Valasz" x:Name="valasz2" Content="Válasz 2" Width="746" Checked="Valasz2_Checked"></RadioButton>
+                <RadioButton Template="{StaticResource Button}"  HorizontalContentAlignment="Center" GroupName="Valasz" x:Name="valasz2" Content="Válasz 2" Width="746" Checked="Valasz2_Checked"></RadioButton>
             </Viewbox>
             <Viewbox Height="36" Margin="-6,252,6,131">
-                <RadioButton GroupName="Valasz" x:Name="valasz3" Content="Válasz 3" Width="745" Checked="Valasz3_Checked"></RadioButton>
+                <RadioButton Template="{StaticResource Button}" HorizontalContentAlignment="Center" GroupName="Valasz" x:Name="valasz3" Content="Válasz 3" Width="745" Checked="Valasz3_Checked"></RadioButton>
             </Viewbox>
             <Viewbox Height="36" Margin="-6,297,6,86">
-                <RadioButton GroupName="Valasz" x:Name="valasz4" Content="Válasz 4" Width="745" Checked="Valasz4_Checked"></RadioButton>
+                <RadioButton Template="{StaticResource Button}" HorizontalContentAlignment="Center" GroupName="Valasz" x:Name="valasz4" Content="Válasz 4" Width="745" Checked="Valasz4_Checked"></RadioButton>
             </Viewbox>
-
-
-            <Button x:Name="kilepes" Content="Kilépés" HorizontalAlignment="Left" Margin="719,356,0,0" VerticalAlignment="Top" Width="80" Visibility="Hidden" Click="kilep"/>
 
             <Label x:Name="oladalJelzo" Content="1/10" HorizontalContentAlignment="Center" Margin="786,773,910,0" VerticalAlignment="Top" FontSize="24" Height="50"/>
             <Button Name="vissza" Content="Vissza" HorizontalAlignment="Left" Margin="10,848,0,0" VerticalAlignment="Top" Width="176" Height="76" Click="elozoLap_Betolt" FontSize="24"/>
@@ -63,6 +68,7 @@
             <Button Name="oldal_4" Content="" HorizontalAlignment="Left" Margin="618,870,0,0" VerticalAlignment="Top" Width="98" Height="34" Click="oldal_4_Click"/>
             <Button Name="oldal_3" Content="" HorizontalAlignment="Left" Margin="469,870,0,0" VerticalAlignment="Top" Width="96" Height="34" Click="oldal_3_Click"/>
             <Button x:Name="kiertekelesGomb" Content="Végkiértékelés" HorizontalAlignment="Left" Margin="1542,754,0,0" VerticalAlignment="Top" Width="170" Click="kiertekeles" Height="50" FontSize="24"/>
+            <Button x:Name="kilepes" Content="Kilépés" HorizontalAlignment="Left" Margin="1542,754,0,0" VerticalAlignment="Top" Width="170"  Height="50" FontSize="24" Click="kilep" Visibility="Hidden"/>
 
 
 

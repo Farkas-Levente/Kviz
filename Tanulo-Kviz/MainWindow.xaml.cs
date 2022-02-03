@@ -348,21 +348,40 @@ namespace Tanulo_Kviz
         private void Valasz1_Checked(object sender, RoutedEventArgs e)
         {
             currentKerdes.valasztott = valasz1.Content.ToString();
+            valasz1.Background = Brushes.LightGray;
+            valasz2.Background = Brushes.Transparent;
+            valasz3.Background = Brushes.Transparent;
+            valasz4.Background = Brushes.Transparent;
+
         }
 
         private void Valasz2_Checked(object sender, RoutedEventArgs e)
         {
             currentKerdes.valasztott = valasz2.Content.ToString();
+            valasz2.Background = Brushes.LightGray;
+            valasz1.Background = Brushes.Transparent;
+            valasz3.Background = Brushes.Transparent;
+            valasz4.Background = Brushes.Transparent;
+
         }
 
         private void Valasz3_Checked(object sender, RoutedEventArgs e)
         {
             currentKerdes.valasztott = valasz3.Content.ToString();
+            valasz3.Background = Brushes.LightGray;
+            valasz2.Background = Brushes.Transparent;
+            valasz1.Background = Brushes.Transparent;
+            valasz4.Background = Brushes.Transparent;
         }
 
         private void Valasz4_Checked(object sender, RoutedEventArgs e)
         {
             currentKerdes.valasztott = valasz4.Content.ToString();
+            valasz4.Background = Brushes.LightGray;
+            valasz2.Background = Brushes.Transparent;
+            valasz3.Background = Brushes.Transparent;
+            valasz1.Background = Brushes.Transparent;
+
         }
 
         private void oldal_1_Click(object sender, RoutedEventArgs e)
@@ -377,6 +396,10 @@ namespace Tanulo_Kviz
             valasz2.IsChecked = false;
             valasz3.IsChecked = false;
             valasz4.IsChecked = false;
+            valasz1.Background = Brushes.Transparent;
+            valasz2.Background = Brushes.Transparent;
+            valasz3.Background = Brushes.Transparent;
+            valasz4.Background = Brushes.Transparent;
         }
 
         private void oldal_2_Click(object sender, RoutedEventArgs e)
