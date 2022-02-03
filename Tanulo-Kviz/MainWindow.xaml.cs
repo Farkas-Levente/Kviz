@@ -230,6 +230,20 @@ namespace Tanulo_Kviz
             tantargy.Content = selectedTargy.nev;
             temakor.Content = selectedTema.nev;
             GeneralKerdesSor();
+
+            foreach (RadioButton button in buttons)
+            {
+                if (button.Content.ToString() == currentKerdes.helyesValasz)
+                {
+                    button.Foreground = Brushes.Black;
+                }
+                else
+                {
+                    button.Foreground = Brushes.Black;
+                }
+                button.IsEnabled = true;
+            }
+            kiertekelt = false;
         }
 
 
@@ -512,6 +526,22 @@ namespace Tanulo_Kviz
             }
 
             MessageBox.Show($"{helyesValaszok}/10 pontod lett.");
+
+            kilepes.Visibility = Visibility.Visible;
+        }
+
+        private void kilep(object sender, RoutedEventArgs e)
+        {
+            
+            Nullazas();
+            betoltottKerdesek.Clear();
+            oldalIndex = 0;
+
+            kvizLap.Visibility = Visibility.Hidden;
+            foLap.Visibility = Visibility.Visible;
+
+            kilepes.Visibility = Visibility.Hidden;
+
         }
     }
 }
