@@ -32,7 +32,7 @@ namespace Tanulo_Kviz
         Kerdes currentKerdes = null;
 
         List<Button> oldalValtoGombok = new List<Button>();
-
+        bool kiertekelt = false;
         public MainWindow()
         {
 
@@ -304,6 +304,24 @@ namespace Tanulo_Kviz
                 button.Background = Brushes.White;
             }
             oldalValtoGombok[oldalIndex].Background = Brushes.Aqua;
+
+            if(kiertekelt)
+            {
+                foreach (RadioButton button in buttons)
+                {
+                    if (button.Content.ToString() == ujKerdes.helyesValasz)
+                    {
+                        button.Foreground = Brushes.Green;
+                    }
+                    else
+                    {
+                        button.Foreground = Brushes.Red;
+                    }
+
+
+                }
+            }
+           
         }
 
         private void Kovetkezo_Oldal(object sender, RoutedEventArgs e)
@@ -467,6 +485,21 @@ namespace Tanulo_Kviz
 
         private void kiertekeles(object sender, RoutedEventArgs e)
         {
+            kiertekelt = true;
+
+            foreach(RadioButton button in buttons)
+            {
+                if(button.Content.ToString() == currentKerdes.helyesValasz)
+                {
+                    button.Foreground = Brushes.Green;
+                }
+                else
+                {
+                    button.Foreground = Brushes.Red;
+                }
+                
+            }
+            
             int helyesValaszok = 0;
             foreach (Kerdes kerdes in betoltottKerdesek)
             {
