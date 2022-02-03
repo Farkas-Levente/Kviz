@@ -63,14 +63,9 @@
             <Label x:Name="testLabel7" Content="testLabel" HorizontalAlignment="Left" Margin="490,218,0,0" VerticalAlignment="Top" Width="133"/>
             <Label x:Name="testLabel8" Content="testLabel" HorizontalAlignment="Left" Margin="492,249,0,0" VerticalAlignment="Top" Width="131"/>
             <Button x:Name="kiertekelesGomb" Content="Végkiértékelés" HorizontalAlignment="Left" Margin="719,356,0,0" VerticalAlignment="Top" Width="80" Click="kiertekeles"/>
-
+            <Button x:Name="kilepes" Content="Kilépés" HorizontalAlignment="Left" Margin="719,356,0,0" VerticalAlignment="Top" Width="80" Visibility="Hidden" Click="kilep"/>
 
         </Grid>
-
-
-
-
     </Grid>
-
 </Window>
 
