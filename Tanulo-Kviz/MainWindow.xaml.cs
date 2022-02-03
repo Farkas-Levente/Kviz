@@ -369,5 +369,95 @@ namespace Tanulo_Kviz
             if (betoltottKerdesek[1].valasztott != null)
                 testLabel8.Content = betoltottKerdesek[1].valasztott;
         }
+
+        private void oldal_1_Click(object sender, RoutedEventArgs e)
+        {
+            BetoltKerdes(betoltottKerdesek[0]);
+            valasz1.IsChecked = false;
+            valasz2.IsChecked = false;
+            valasz3.IsChecked = false;
+            valasz4.IsChecked = false;
+        }
+
+        private void oldal_2_Click(object sender, RoutedEventArgs e)
+        {
+            BetoltKerdes(betoltottKerdesek[1]);
+            valasz1.IsChecked = false;
+            valasz2.IsChecked = false;
+            valasz3.IsChecked = false;
+            valasz4.IsChecked = false;
+        }
+
+        private void oldal_10_Click(object sender, RoutedEventArgs e)
+        {
+            BetoltKerdes(betoltottKerdesek[9]);
+            valasz1.IsChecked = false;
+            valasz2.IsChecked = false;
+            valasz3.IsChecked = false;
+            valasz4.IsChecked = false;
+        }
+
+        private void oldal_9_Click(object sender, RoutedEventArgs e)
+        {
+            BetoltKerdes(betoltottKerdesek[8]);
+            valasz1.IsChecked = false;
+            valasz2.IsChecked = false;
+            valasz3.IsChecked = false;
+            valasz4.IsChecked = false;
+        }
+
+        private void oldal_8_Click(object sender, RoutedEventArgs e)
+        {
+            BetoltKerdes(betoltottKerdesek[7]);
+            valasz1.IsChecked = false;
+            valasz2.IsChecked = false;
+            valasz3.IsChecked = false;
+            valasz4.IsChecked = false;
+        }
+
+        private void oldal_7_Click(object sender, RoutedEventArgs e)
+        {
+            BetoltKerdes(betoltottKerdesek[6]);
+            valasz1.IsChecked = false;
+            valasz2.IsChecked = false;
+            valasz3.IsChecked = false;
+            valasz4.IsChecked = false;
+        }
+
+        private void oldal_6_Click(object sender, RoutedEventArgs e)
+        {
+            BetoltKerdes(betoltottKerdesek[5]);
+            valasz1.IsChecked = false;
+            valasz2.IsChecked = false;
+            valasz3.IsChecked = false;
+            valasz4.IsChecked = false;
+        }
+
+        private void oldal_5_Click(object sender, RoutedEventArgs e)
+        {
+            BetoltKerdes(betoltottKerdesek[4]);
+            valasz1.IsChecked = false;
+            valasz2.IsChecked = false;
+            valasz3.IsChecked = false;
+            valasz4.IsChecked = false;
+        }
+
+        private void oldal_4_Click(object sender, RoutedEventArgs e)
+        {
+            BetoltKerdes(betoltottKerdesek[3]);
+            valasz1.IsChecked = false;
+            valasz2.IsChecked = false;
+            valasz3.IsChecked = false;
+            valasz4.IsChecked = false;
+        }
+
+        private void oldal_3_Click(object sender, RoutedEventArgs e)
+        {
+            BetoltKerdes(betoltottKerdesek[2]);
+            valasz1.IsChecked = false;
+            valasz2.IsChecked = false;
+            valasz3.IsChecked = false;
+            valasz4.IsChecked = false;
+        }
     }
 }
