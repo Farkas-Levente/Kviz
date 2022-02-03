@@ -202,8 +202,8 @@ namespace Tanulo_Kviz
                 MessageBox.Show("Kérem válasszon tantárgyat!");
                 return;
             }
-            testLabel3.Content = selectedTargy.nev;
-            testlabel4.Content = selectedTema.nev;
+            //testLabel3.Content = selectedTargy.nev;
+            //testlabel4.Content = selectedTema.nev;
 
             kvizLap.Visibility = Visibility.Visible;
             foLap.Visibility = Visibility.Hidden;

@@ -18,8 +18,8 @@
             <Button Name="GeneralGomb" Content="Feladatok generálása" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="General_Click"/>
             <Label Name="testLabel" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,147,0,0" VerticalAlignment="Top"/>
             <Label x:Name="testlabel2" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,178,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="testLabel3" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,238,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="testlabel4" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,269,0,0" VerticalAlignment="Top"/>
+            <!--<Label x:Name="testLabel3" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,238,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="testlabel4" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,269,0,0" VerticalAlignment="Top"/>-->
         </Grid>
         <!--Kviz-->
 
