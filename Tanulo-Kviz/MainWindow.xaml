@@ -5,19 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tanulo_Kviz"
         mc:Ignorable="d"
-        Title="Tanulás ellenőrző kvíz" Height="480" Width="850">
+        Title="Tanulás ellenőrző kvíz" Height="1000" Width="1800">
     <Grid>
         <Grid Name="foLap" Visibility="Visible">
-            <Label Content="Válaszd ki a kvíz témáját:" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" FontSize="16"/>
-            <Label Content="Tantárgy:" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" FontSize="16"/>
-            <ComboBox Name="targyBox" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="TargyBox_SelectionChanged">
-
-            </ComboBox>
-            <Label Content="Témakör" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" FontSize="16"/>
-            <ComboBox Name="temakorBox" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="TemaBox_SelectionChanged"/>
-            <Button Name="GeneralGomb" Content="Feladatok generálása" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="160" Height="70" Click="General_Click"/>
-            <Label Name="testLabel" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,147,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="testlabel2" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,178,0,0" VerticalAlignment="Top"/>
+            <Image HorizontalAlignment="Left" Height="917" VerticalAlignment="Top" Width="1643" Source="quiz_kep.png" Margin="79,67,0,-15" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1.1" ScaleY="1.15"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Label Content="Válaszd ki a kvíz témáját:" HorizontalAlignment="Center" Margin="722,40,547,0" VerticalAlignment="Top" FontSize="36" Width="523" Foreground="#FFF52D2D" FontWeight="Bold"/>
+            <Label Content="Tantárgy:" HorizontalAlignment="Center" Margin="830,212,804,0" VerticalAlignment="Top" FontSize="36" Height="83" Width="158" Foreground="#FFF52D2D" FontStyle="Italic"/>
+            <ComboBox Name="targyBox" HorizontalAlignment="Center" Margin="722,295,704,0" VerticalAlignment="Top" Width="366" SelectionChanged="TargyBox_SelectionChanged" Height="42" FontSize="22"></ComboBox>
+            <Label Content="Témakör:" HorizontalAlignment="Center" Margin="830,424,782,0" VerticalAlignment="Top" FontSize="36" Height="83" Width="180" Foreground="#FFF52D2D" FontStyle="Italic"/>
+            <ComboBox Name="temakorBox" HorizontalAlignment="Center" Margin="722,554,704,0" VerticalAlignment="Top" Width="366" SelectionChanged="TemaBox_SelectionChanged" Height="42" FontSize="22"/>
+            <Button Name="GeneralGomb" Content="Feladatok generálása" HorizontalAlignment="Center" Margin="722,700,704,0" VerticalAlignment="Top" Width="366" Height="154" Click="General_Click" FontSize="36" Background="#FF5B4F4F" Foreground="#FF1F0606" FontWeight="Bold"/>
             <!--<Label x:Name="testLabel3" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,238,0,0" VerticalAlignment="Top"/>
             <Label x:Name="testlabel4" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,269,0,0" VerticalAlignment="Top"/>-->
         </Grid>

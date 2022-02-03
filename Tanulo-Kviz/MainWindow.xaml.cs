@@ -172,7 +172,6 @@ namespace Tanulo_Kviz
 
             Tantargy targy = null;
             string selectedTargyString = targyBox.SelectedItem.ToString();
-            testLabel.Content = selectedTargyString;
             tantargyNyilvantarto.TryGetValue(selectedTargyString, out targy);
 
             temakorBox.IsEnabled = false;
@@ -196,7 +195,6 @@ namespace Tanulo_Kviz
             Tema tema = null;
             string selectedTemaString = temakorBox.SelectedItem.ToString();
             
-            testlabel2.Content = selectedTemaString;
             selectedTargy.temaNyilvantarto.TryGetValue(selectedTemaString, out tema);
 
             if (tema == null) return;
