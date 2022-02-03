@@ -1,0 +1,15 @@
+physics; eletricity; What's the symbol of voltage?; U; V; I; R;
+physics; eletricity; What's the unit of measure for voltage?; V; A; F; U;
+physics; eletricity; What's the symbol amperage?; I; U; A; R;
+physics; eletricity; What's the unit of measure for amperage?; A; I; W; V;
+physics; eletricity; What's the symbol of resistance?; R; I; V; Ω;
+physics; eletricity; What's the unit of measure for resistance?; Ω; V; A; R;
+physics; eletricity; Which of the two does Ohm's law notes a correlation?; Voltage, Amperageg; Voltage, Resistance;  Amperage, Resistance; None of them.;
+physics; eletricity; According to Ohm's law voltage and amperage are:; directly proportional; equal; inversely proportional; parallel;
+physics; eletricity; How much is the resistance, if the voltage is 20 V and the amperage is 10 A?; 2 Ω; 0,5 Ω; 20 Ω; 200 Ω;
+physics; eletricity; How much is the voltage, if the resistance is 20 Ω and the amperage is 10 A?; 200 V; 2 V; 0,5 V; 20 V;
+physics; eletricity; How much is the amperage, if the resistance is 4Ω and the voltage is 24V?; 6 A; 96 A; 20 A; 0,16 A;
+physics; eletricity; What's the symbol of time; t; Q; I; T;
+physics; eletricity; What's the symbol of electric charge; Q; C; T; R;
+physics; eletricity; Which one is the consumer?; lamp; parallel connection; amper; elektroscope;
+physics; eletricity; Which one measures the voltage?; parallel connection; amper; lamp; elektroscope;

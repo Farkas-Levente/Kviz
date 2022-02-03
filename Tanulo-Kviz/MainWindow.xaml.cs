@@ -59,6 +59,10 @@ namespace Tanulo_Kviz
             tantargyNyilvantarto.Add(matematika.nev, matematika);
             targyBox.Items.Add(matematika.nev);
 
+            Tantargy physics = new Tantargy("physics.txt");
+            tantargyNyilvantarto.Add(physics.nev, physics);
+            targyBox.Items.Add(physics.nev);
+
         }
 
         public class Tantargy
