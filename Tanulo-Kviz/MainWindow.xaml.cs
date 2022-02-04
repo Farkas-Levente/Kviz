@@ -323,7 +323,6 @@ namespace Tanulo_Kviz
                     }
                     button.IsEnabled = false;
 
-
                 }
             }
            
