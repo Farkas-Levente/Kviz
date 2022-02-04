@@ -70,7 +70,7 @@
             <Button Name="oldal_4" Content="" Margin="240,470,473,0" VerticalAlignment="Top" Height="14" Click="oldal_4_Click" RenderTransformOrigin="0.064,1.071" HorizontalAlignment="Center" Width="47"/>
             <Button Name="oldal_3" Content="" Margin="188,470,525,0" VerticalAlignment="Top" Height="14" Click="oldal_3_Click" HorizontalAlignment="Center" Width="47"/>
             <Button x:Name="kiertekelesGomb" Content="Végkiértékelés" Margin="561,404,43,0" VerticalAlignment="Top" Click="kiertekeles" Height="38" FontSize="24" HorizontalAlignment="Center"/>
-            <Button x:Name="kilepes" Content="Kilépés" HorizontalAlignment="Left" Margin="1542,754,0,0" VerticalAlignment="Top" Width="170"  Height="50" FontSize="24" Click="kilep" Visibility="Hidden"/>
+            <Button x:Name="kilepes" Content="Kilépés" Margin="0,404,120,62"  Height="38" FontSize="24" Click="kilep" Visibility="Hidden" VerticalAlignment="Center" HorizontalAlignment="Right"/>
 
 
 

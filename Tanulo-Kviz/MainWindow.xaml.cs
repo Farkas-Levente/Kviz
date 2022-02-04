@@ -490,7 +490,6 @@ namespace Tanulo_Kviz
 
         private void kilep(object sender, RoutedEventArgs e)
         {
-            
             Nullazas();
             betoltottKerdesek.Clear();
             oldalIndex = 0;
@@ -501,7 +500,8 @@ namespace Tanulo_Kviz
             kilepes.Visibility = Visibility.Hidden;
             selectedTema = null;
             selectedTargy = null;
-           
+            Close();
+
 
         }
     }
