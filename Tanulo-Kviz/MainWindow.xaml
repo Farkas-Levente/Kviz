@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tanulo_Kviz"
         mc:Ignorable="d"
-        Title="Tanulás ellenőrző kvíz" Height="1000" Width="1800">
+        Title="Tanulás ellenőrző kvíz" 
+        Height="{Binding SystemParameters.PrimaryScreenHeight}" 
+    Width="{Binding SystemParameters.PrimaryScreenWidth}">
     <Window.Resources>
         <ControlTemplate x:Key="Button" TargetType="RadioButton">
             <Grid>
@@ -15,23 +17,23 @@
         </ControlTemplate>
     </Window.Resources>
     <Grid>
-        <Grid Name="foLap" Visibility="Visible">
-            <Image HorizontalAlignment="Left" Height="917" VerticalAlignment="Top" Width="1643" Source="quiz_kep.png" Margin="79,67,0,-15" RenderTransformOrigin="0.5,0.5">
+        <Grid Name="foLap" Visibility="Visible" Background="#FF1B1B1B">
+            <Image Source="quiz_kep.png" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>
                     <TransformGroup>
-                        <ScaleTransform ScaleX="1.1" ScaleY="1.15"/>
+                        <ScaleTransform/>
                         <SkewTransform/>
                         <RotateTransform/>
                         <TranslateTransform/>
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>
-            <Label Content="Válaszd ki a kvíz témáját:" HorizontalAlignment="Center" Margin="722,40,547,0" VerticalAlignment="Top" FontSize="36" Width="523" Foreground="#FFF52D2D" FontWeight="Bold"/>
-            <Label Content="Tantárgy:" HorizontalAlignment="Center" Margin="830,212,804,0" VerticalAlignment="Top" FontSize="36" Height="83" Width="158" Foreground="#FFF52D2D" FontStyle="Italic"/>
-            <ComboBox Name="targyBox" HorizontalAlignment="Center" Margin="722,295,704,0" VerticalAlignment="Top" Width="366" SelectionChanged="TargyBox_SelectionChanged" Height="42" FontSize="22"></ComboBox>
-            <Label Content="Témakör:" HorizontalAlignment="Center" Margin="830,424,782,0" VerticalAlignment="Top" FontSize="36" Height="83" Width="180" Foreground="#FFF52D2D" FontStyle="Italic"/>
-            <ComboBox Name="temakorBox" HorizontalAlignment="Center" Margin="722,554,704,0" VerticalAlignment="Top" Width="366" SelectionChanged="TemaBox_SelectionChanged" Height="42" FontSize="22"/>
-            <Button Name="GeneralGomb" Content="Feladatok generálása" HorizontalAlignment="Center" Margin="722,700,704,0" VerticalAlignment="Top" Width="366" Height="154" Click="General_Click" FontSize="36" Background="#FF5B4F4F" Foreground="#FF1F0606" FontWeight="Bold"/>
+            <Label Content="Válaszd ki a kvíz témáját:" Margin="122,10,116.6,0" FontSize="36" Width="523" Foreground="#FFF52D2D" FontWeight="Bold" VerticalAlignment="Top"/>
+            <Label Content="Tantárgy:" Margin="287,73,316.6,0" FontSize="36" Height="83" Width="158" Foreground="#FFF52D2D" FontStyle="Italic" VerticalAlignment="Top"/>
+            <ComboBox Name="targyBox" Margin="205,156,190.6,0" Width="366" SelectionChanged="TargyBox_SelectionChanged" Height="42" FontSize="22" VerticalAlignment="Top"/>
+            <Label Content="Témakör:" Margin="287,222,294.6,0" VerticalAlignment="Top" FontSize="36" Height="83" Width="180" Foreground="#FFF52D2D" FontStyle="Italic"/>
+            <ComboBox Name="temakorBox" Margin="205,305,190.6,0" VerticalAlignment="Top" Width="366" SelectionChanged="TemaBox_SelectionChanged" Height="42" FontSize="22"/>
+            <Button Name="GeneralGomb" Content="Feladatok generálása" Margin="205,391,208.6,0" VerticalAlignment="Top" Height="69" Click="General_Click" FontSize="36" Background="#FF5B4F4F" Foreground="#FF1F0606" FontWeight="Bold"/>
             <!--<Label x:Name="testLabel3" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,238,0,0" VerticalAlignment="Top"/>
             <Label x:Name="testlabel4" Content="TesztLabel" HorizontalAlignment="Left" Margin="99,269,0,0" VerticalAlignment="Top"/>-->
         </Grid>
