@@ -1,16 +1,16 @@
-történelem;magyartori;Mi volt I.István neve a kerszetelése előtt;Vajk;Géza;Sarolt;egyik sem
-történelem;magyartori;Mikor végezték ki  a 13 aradi vértanut;1849 okt. 6;1849 okt. 6;1849 aug. 13;1849 apr. 14.
-történelem;magyartori;Mi történt 1849 április 14-én?;Függetlenségi nyilatkozat kiadása;Áprilisi törvények;Magyar Szabadságharc;Pesti forradalom
-történelem;magyartori;Mikor lesz magyarország köztársaság?;egyik sem; 1981 okt 23;1956 okt 23;1848 marc 15
-történelem;magyartori;Kit nevezünk második honalapítónak?;IV Béla; I István;Géza fejedelem; I Laszló
-történelem;magyartori;Mikor halt ki az Árpád-ház?;1301;1038;1222;az Árpádház nem halt ki!
-történelem;magyartori;Mikor volt Nándorfehérvári diadal?;1456;1440;1454;1546;
-történelem;magyartori;Mikor volt(ak) a hasburg ház trónfosztása(i)?;mindegyik;1620;1849;1707
-történelem;magyartori;Ki vezette a parasztháborút 1514ben?;Dózsa György;Kossuth Lajos;Szondi Miklós;egyiksem
-történelem;magyartori;Ki uralkodott 1458tól 1490ig Magyarországon?;I Mátyás;I István;IV Béla;Ferenc József
-történelem;magyartori;Mikor kezdődik a 15éves háború?;1591;1606;1621;1576
-történelem;magyartori;Kik között volt a karlócai béke 1699ben?;Szetn Liga-Törökök;Törökök-Magyarok;Poroszok-Franciák;egyik sem
-történelem;magyartori;Mi történt 1222ben?;Az aranybula kiadása;Semmi;Kihal az Árpádház;I István szenté avatása
+történelem;magyar történelem;Mi volt I.István neve a kerszetelése előtt;Vajk;Géza;Sarolt;egyik sem
+történelem;magyar történelem;Mikor végezték ki  a 13 aradi vértanut;1849 okt. 6;1849 okt. 6;1849 aug. 13;1849 apr. 14.
+történelem;magyar történelem;Mi történt 1849 április 14-én?;Függetlenségi nyilatkozat kiadása;Áprilisi törvények;Magyar Szabadságharc;Pesti forradalom
+történelem;magyar történelem;Mikor lesz magyarország köztársaság?;egyik sem; 1981 okt 23;1956 okt 23;1848 marc 15
+történelem;magyar történelem;Kit nevezünk második honalapítónak?;IV Béla; I István;Géza fejedelem; I Laszló
+történelem;magyar történelem;Mikor halt ki az Árpád-ház?;1301;1038;1222;az Árpádház nem halt ki!
+történelem;magyar történelem;Mikor volt Nándorfehérvári diadal?;1456;1440;1454;1546;
+történelem;magyar történelem;Mikor volt(ak) a hasburg ház trónfosztása(i)?;mindegyik;1620;1849;1707
+történelem;magyar történelem;Ki vezette a parasztháborút 1514ben?;Dózsa György;Kossuth Lajos;Szondi Miklós;egyiksem
+történelem;magyar történelem;Ki uralkodott 1458tól 1490ig Magyarországon?;I Mátyás;I István;IV Béla;Ferenc József
+történelem;magyar történelem;Mikor kezdődik a 15éves háború?;1591;1606;1621;1576
+történelem;magyar történelem;Kik között volt a karlócai béke 1699ben?;Szetn Liga-Törökök;Törökök-Magyarok;Poroszok-Franciák;egyik sem
+történelem;magyar történelem;Mi történt 1222ben?;Az aranybula kiadása;Semmi;Kihal az Árpádház;I István szenté avatása
 történelem;magyar reformkor;Mit jelent a diéta szó?;országgyűlés;helytartótanács;nemes;egyik sem
 történelem;magyar reformkor;Kik alkották a felsőtáblát?;bárók;vármegyék követei;egyik sem;mindkettő
 történelem;magyar reformkor;Mikor volt az első reformországgyűlés?;1832;1830;1842;1848
@@ -25,15 +25,15 @@ történelem;magyar reformkor;Mikor szetesítették az áprilisi törvényeket?;
 történelem;magyar reformkor;Mi történt 1849 április 14-én?;Függetlenségi nyilatkozat kiadása;Áprilisi törvények;Magyar Szabadságharc;Pesti forradalom
 történelem;magyar reformkor;Hol volt a magyar fegyverletétel?;Világosnál;Bécsnél;Aradon;Pesten
 történelem;magyar reformkor;Mikor voltak a kivégzések?;1849 okt. 6;1849 okt. 6;1849 aug. 13;1849 apr. 14.
-történelem; nagyhatalmipolitika; Mikor alapúlt meg az Olasz Királyság?;1861;1860;1866;1870
-történelem; nagyhatalmipolitika;Melyék háború volt 1853 és 1856 között?;krími háború;Első világháború;Szárd-Osztrák;Porosz-Osztrák
-történelem; nagyhatalmipolitika;Ki volt az USA elnöke 1860tól?;Abraham Lincoln;George Washington;Otto von Bismarck;Franklin D. Roosevelt
-történelem; nagyhatalmipolitika;Mely ország gyarmatosít Azsiában?;mindkettő;Japán;Oroszország;Egyik sem
-történelem; nagyhatalmipolitika;A 20. század legelején ki vezette a Bolsevikokat?;Lenin;Stálin;Marx;Bismarc
-történelem; nagyhatalmipolitika;Indiából milyen gyersanyagot szerzett be Nagy-Brittania?;gyapot;fémek;szén;egyik sem
-történelem; nagyhatalmipolitika;Ki találta fel a géppuskát?;Hiram Maxim;Henry Ford;Thomas Edison;Alfred Nobel
-történelem; nagyhatalmipolitika;Mely találmány nem a 2. ipari forradalomból származik?;mindegyik;gözgép;távíró;fecskendő
-történelem; nagyhatalmipolitika;Mikor jött létre a kettős szövetség?;1879;1880;1888;egyik sem
-történelem; nagyhatalmipolitika;Hogy hívták az Olaszország,Németország és az Osztrák-Magyar monarchia szövetségét a 19. század legvégén?;hármas szövetség;antant;központi hatalmak;egyik sem
-történelem; nagyhatalmipolitika;Miért jött létre az antant?;Válaszul a kettős szövetség létrejöttére;Mert az oroszok és a franciák régen is szövetségben álltak;mindkettő;egyik sem
-történelem; nagyhatalmipolitika;Melyék ország volt tagja az antantnak 1893ban?;Franciaország;Nagy-Britania;Olaszország;mindegyik
+történelem;nagyhatalmi politika; Mikor alapúlt meg az Olasz Királyság?;1861;1860;1866;1870
+történelem;nagyhatalmi politika;Melyék háború volt 1853 és 1856 között?;krími háború;Első világháború;Szárd-Osztrák;Porosz-Osztrák
+történelem;nagyhatalmi politika;Ki volt az USA elnöke 1860tól?;Abraham Lincoln;George Washington;Otto von Bismarck;Franklin D. Roosevelt
+történelem;nagyhatalmi politika;Mely ország gyarmatosít Azsiában?;mindkettő;Japán;Oroszország;Egyik sem
+történelem;nagyhatalmi politika;A 20. század legelején ki vezette a Bolsevikokat?;Lenin;Stálin;Marx;Bismarc
+történelem;nagyhatalmi politika;Indiából milyen gyersanyagot szerzett be Nagy-Brittania?;gyapot;fémek;szén;egyik sem
+történelem;nagyhatalmi politika;Ki találta fel a géppuskát?;Hiram Maxim;Henry Ford;Thomas Edison;Alfred Nobel
+történelem;nagyhatalmi politika;Mely találmány nem a 2. ipari forradalomból származik?;mindegyik;gözgép;távíró;fecskendő
+történelem;nagyhatalmi politika;Mikor jött létre a kettős szövetség?;1879;1880;1888;egyik sem
+történelem;nagyhatalmi politika;Hogy hívták az Olaszország,Németország és az Osztrák-Magyar monarchia szövetségét a 19. század legvégén?;hármas szövetség;antant;központi hatalmak;egyik sem
+történelem;nagyhatalmi politika;Miért jött létre az antant?;Válaszul a kettős szövetség létrejöttére;Mert az oroszok és a franciák régen is szövetségben álltak;mindkettő;egyik sem
+történelem;nagyhatalmi politika;Melyék ország volt tagja az antantnak 1893ban?;Franciaország;Nagy-Britania;Olaszország;mindegyik
